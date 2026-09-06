@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generic Roofing Co. | Phoenix Metro Roofing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1C2430;
+    --ink-2:#161C24;
+    --paper:#F1ECE1;
+    --paper-2:#E8E1D2;
+    --accent:#B8452F;
+    --accent-2:#98371F;
+    --slate:#5B6672;
+    --line:#D8D0C0;
+    --line-dark:#31404F;
+    --max:1120px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.brand{
+    font-family:'Oswald', sans-serif;
+    letter-spacing:0.01em;
+    line-height:1.1;
+  }
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  img,svg{display:block; max-width:100%;}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:40;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 28px;
+  }
+  .brand{
+    font-size:22px; font-weight:700; color:var(--ink);
+  }
+  .brand span{color:var(--accent);}
+  .nav-right{display:flex; align-items:center; gap:24px;}
+  .nav-phone{
+    font-size:15px; font-weight:500; color:var(--slate);
+    display:none;
+  }
+  @media(min-width:720px){ .nav-phone{display:block;} }
+  .btn{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:0.02em;
+    padding:12px 22px;
+    border:none;
+    border-radius:2px;
+    cursor:pointer;
+    transition:background 0.15s ease;
+  }
+  .btn:hover{background:var(--accent-2);}
+  .btn-outline{
+    background:transparent;
+    border:1.5px solid var(--ink);
+    color:var(--ink);
+  }
+  .btn-outline:hover{background:var(--ink); color:var(--paper);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:72px 0 0;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    align-items:center;
+  }
+  @media(min-width:860px){
+    .hero-grid{grid-template-columns:1.05fr 0.95fr; gap:24px;}
+  }
+  .hero-copy h1{
+    font-size:clamp(34px, 5.4vw, 58px);
+    color:var(--ink);
+    max-width:12ch;
+  }
+  .hero-copy p{
+    margin-top:20px;
+    font-size:18px;
+    color:var(--slate);
+    max-width:46ch;
+  }
+  .hero-cta{
+    margin-top:30px;
+    display:flex; gap:14px; flex-wrap:wrap;
+  }
+  .hero-art{
+    justify-self:center;
+    opacity:0;
+    animation:rise 0.7s ease forwards 0.15s;
+  }
+  .hero-copy{
+    opacity:0;
+    animation:rise 0.7s ease forwards;
+  }
+  @keyframes rise{
+    from{opacity:0; transform:translateY(14px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .roofline path{
+    stroke-dasharray:1400;
+    stroke-dashoffset:1400;
+    animation:draw 1.4s ease forwards 0.3s;
+  }
+  @keyframes draw{ to{stroke-dashoffset:0;} }
+
+  /* stat strip */
+  .stats{
+    margin-top:56px;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .stat{
+    flex:1 1 200px;
+    padding:22px 28px;
+    border-right:1px solid var(--line);
+    text-align:center;
+  }
+  .stat:last-child{border-right:none;}
+  .stat .num{
+    font-family:'Oswald', sans-serif;
+    font-size:26px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .stat .lbl{
+    font-size:14px;
+    color:var(--slate);
+    margin-top:2px;
+  }
+
+  /* ---------- Section shells ---------- */
+  section{padding:88px 0;}
+  .section-head{
+    max-width:640px;
+    margin-bottom:46px;
+  }
+  .section-head h2{
+    font-size:clamp(28px, 3.6vw, 38px);
+  }
+  .section-head p{
+    margin-top:14px;
+    color:var(--slate);
+    font-size:17px;
+  }
+
+  /* ---------- Services (divided list) ---------- */
+  .services-list{
+    border-top:1px solid var(--line);
+  }
+  .service-row{
+    display:grid;
+    grid-template-columns:40px 1fr;
+    gap:20px;
+    padding:26px 0;
+    border-bottom:1px solid var(--line);
+    align-items:start;
+  }
+  .service-row .icon{color:var(--accent);}
+  .service-text h3{
+    font-size:19px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .service-text p{
+    color:var(--slate);
+    font-size:15.5px;
+    margin-top:4px;
+  }
+  @media(min-width:640px){
+    .service-text{
+      display:grid;
+      grid-template-columns:200px 1fr;
+      gap:20px;
+      align-items:start;
+    }
+    .service-text p{margin-top:0;}
+  }
+
+  /* ---------- Why us ---------- */
+  .why-grid{
+    display:grid;
+    gap:36px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:760px){
+    .why-grid{grid-template-columns:repeat(3, 1fr);}
+  }
+  .why-item .icon{color:var(--accent); margin-bottom:14px;}
+  .why-item h3{font-size:20px; margin-bottom:8px;}
+  .why-item p{color:var(--slate); font-size:15.5px;}
+
+  /* ---------- Break band ---------- */
+  .break{
+    background:var(--ink);
+    color:var(--paper);
+    padding:64px 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .break-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:24px;
+  }
+  .break h2{
+    font-size:clamp(24px,3.4vw,32px);
+    max-width:16ch;
+    color:#fff;
+  }
+  .break-pattern{
+    position:absolute; inset:0;
+    opacity:0.08;
+    background-image:repeating-linear-gradient(45deg, var(--paper) 0 2px, transparent 2px 26px);
+    pointer-events:none;
+  }
+
+  /* ---------- Testimonials ---------- */
+  .testi-list{border-top:1px solid var(--line);}
+  .testi-row{
+    display:grid;
+    grid-template-columns:52px 1fr;
+    gap:20px;
+    padding:28px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .avatar{
+    width:48px; height:48px; border-radius:50%;
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    color:var(--accent);
+    font-size:15px;
+  }
+  .testi-row blockquote{
+    font-size:17px;
+    color:var(--ink);
+  }
+  .testi-row cite{
+    display:block;
+    margin-top:10px;
+    font-style:normal;
+    font-size:14px;
+    color:var(--slate);
+  }
+
+  /* ---------- Final CTA ---------- */
+  .cta-final{
+    text-align:center;
+    padding-top:20px;
+  }
+  .cta-final h2{font-size:clamp(26px,3.6vw,36px); max-width:16ch; margin:0 auto 18px;}
+  .cta-final p{color:var(--slate); max-width:46ch; margin:0 auto 28px;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--ink-2);
+    color:var(--paper);
+    padding:56px 0 28px;
+  }
+  .foot-grid{
+    display:grid;
+    gap:32px;
+    grid-template-columns:1fr;
+    padding-bottom:32px;
+    border-bottom:1px solid var(--line-dark);
+  }
+  @media(min-width:720px){
+    .foot-grid{grid-template-columns:1.3fr 1fr 1fr;}
+  }
+  footer .brand{color:#fff;}
+  footer .brand span{color:var(--accent);}
+  footer p, footer li{color:#AEB6C0; font-size:14.5px;}
+  footer h4{
+    font-family:'Inter', sans-serif;
+    font-size:14px;
+    font-weight:600;
+    color:#fff;
+    margin-bottom:12px;
+  }
+  footer ul{list-style:none;}
+  footer li{margin-bottom:6px;}
+  .foot-bottom{
+    padding-top:24px;
+    font-size:13px;
+    color:#7E8794;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Generic<span>&nbsp;Roofing</span> Co.</div>
+    <div class="nav-right">
+      <span class="nav-phone">(602) 345-6789</span>
+      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Estimate</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Roofs built to outlast the guarantee.</h1>
+        <p>Repairs, replacements, and storm damage — handled by a crew that's been doing this since before shingles came with warranties.</p>
+        <div class="hero-cta">
+          <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Estimate</button>
+          <a href="#services" class="btn btn-outline">See our work</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg class="roofline" width="380" height="280" viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a pitched roof with tile courses">
+          <path d="M30 200 L190 60 L350 200" stroke="#1C2430" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M30 200 L30 240 M350 200 L350 240" stroke="#5B6672" stroke-width="3" stroke-linecap="round"/>
+          <path d="M10 242 L370 242" stroke="#5B6672" stroke-width="3" stroke-linecap="round"/>
+          <path d="M69 180 L84 166 M101 152 L116 138 M133 124 L148 110 M165 96 L180 82" stroke="#B8452F" stroke-width="3" stroke-linecap="round"/>
+          <path d="M215 96 L230 109 M247 124 L262 137 M279 152 L294 165 M311 180 L326 193" stroke="#B8452F" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="95" cy="222" r="26" fill="#F1ECE1" stroke="#1C2430" stroke-width="3"/>
+          <text x="95" y="227" font-family="Oswald, sans-serif" font-size="15" font-weight="600" fill="#B8452F" text-anchor="middle">GRC</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num">30+</div><div class="lbl">Years in business</div></div>
+      <div class="stat"><div class="num">Licensed</div><div class="lbl">Bonded &amp; insured</div></div>
+      <div class="stat"><div class="num">4.9</div><div class="lbl">Rating, 500+ reviews</div></div>
+      <div class="stat"><div class="num">Free</div><div class="lbl">Estimates, always</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we handle</h2>
+      <p>From a single cracked tile to a full commercial re-roof — if it's on top of a building, it's on our list.</p>
+    </div>
+    <div class="services-list">
+
+      <div class="service-row">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20h18M5 20V10l7-6 7 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
+        <div class="service-text">
+          <h3>Roof Repair</h3>
+          <p>Leaks, cracked tile, storm damage — diagnosed right and fixed fast.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M4 14h16"/></svg></div>
+        <div class="service-text">
+          <h3>Full Replacement</h3>
+          <p>Tile, shingle, or foam — installed to last, not just to pass inspection.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 14a4 4 0 0 1 4-4h1a5 5 0 0 1 10 1 3.5 3.5 0 0 1-1 6.9H7a3 3 0 0 1-3-3.9Z"/><path d="M12 18v3M9 21h6"/></svg></div>
+        <div class="service-text">
+          <h3>Storm &amp; Insurance Claims</h3>
+          <p>We'll walk the roof and the paperwork with you, start to payout.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <div class="service-text">
+          <h3>Roof Inspections</h3>
+          <p>A straight answer on what your roof actually needs — nothing added.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l9-4 9 4"/></svg></div>
+        <div class="service-text">
+          <h3>Flat &amp; Foam Roofing</h3>
+          <p>Commercial-grade coatings for flat and low-slope roofs, residential to industrial.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <div class="service-text">
+          <h3>Maintenance &amp; Cleaning</h3>
+          <p>Keep small problems from becoming big, expensive ones.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Why homeowners call us back</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>We show up.</h3>
+        <p>Real appointment windows and same-day callbacks — no ghosting after the estimate.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>We tell you the truth.</h3>
+        <p>If it's a $200 fix, we're not selling you a $20,000 roof.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>We've done this before.</h3>
+        <p>Three decades of Arizona roofs — tile, shingle, and foam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="break">
+  <div class="break-pattern"></div>
+  <div class="wrap break-inner">
+    <h2>Every roof tells a story. We make sure yours has a good one.</h2>
+    <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Start with a free estimate</button>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What people say after the job's done</h2>
+    </div>
+    <div class="testi-list">
+      <div class="testi-row">
+        <div class="avatar">MT</div>
+        <div>
+          <blockquote>"They found the actual leak instead of just patching the ceiling. Fixed in a day."</blockquote>
+          <cite>M.T. — Chandler, AZ</cite>
+        </div>
+      </div>
+      <div class="testi-row">
+        <div class="avatar">RK</div>
+        <div>
+          <blockquote>"Got three quotes. These were the only ones who didn't try to upsell a full tear-off."</blockquote>
+          <cite>R.K. — Peoria, AZ</cite>
+        </div>
+      </div>
+      <div class="testi-row">
+        <div class="avatar">SD</div>
+        <div>
+          <blockquote>"Our insurance claim was a mess until they got involved. Roof's done, claim's paid."</blockquote>
+          <cite>S.D. — Scottsdale, AZ</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Got a roof question? Ask us anything.</h2>
+    <p>Use the chat in the corner — tell us what's going on and we'll get back to you fast.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="font-size:20px; margin-bottom:10px;">Generic<span>&nbsp;Roofing</span> Co.</div>
+        <p>Family-owned roofing serving the Greater Phoenix metro. Licensed, bonded, and insured.</p>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <p>Phoenix - Scottsdale - Mesa - Chandler - Glendale - Peoria - Tempe - Gilbert</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>(602) 345-6789</li>
+          <li>hello@genericroofingco.com</li>
+          <li>Mon–Sat, 7am–6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot-bottom" style="padding:0;">
+      <span>© 2026 Generic Roofing Co. Licensed &amp; Insured. ROC# 000000</span>
+      <span>This is a demo site.</span>
+    </div>
+  </div>
+</footer>
+
+<!--
+  ============================================================
+  TIDIO WIDGET — paste the real embed snippet for whichever
+  contractor's cloned bot you're demoing, right before </body>.
+  Example:
+  <script src="//code.tidio.co/XXXXXXXXXXXXXXXXXXXXXXXXXXXX.js" async></script>
+
+  The floating chat button is injected by Tidio itself once the
+  script loads — nothing else on this page needs to change.
+  Swap this snippet per demo, and remember to pull it back out
+  (or swap to the next contractor) when you're done.
+  ============================================================
+-->
+
+</body>
+</html>
