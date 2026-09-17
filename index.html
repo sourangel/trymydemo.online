@@ -791,21 +791,19 @@
   TIDIO WIDGET — Perfect Plumbing Co. (commercial plumbing)
   bot_template: commercial_plumbing
 
-  Paste the real Tidio embed snippet for the commercial-plumbing
-  bot right here, immediately before </body>. The floating chat
-  button is injected by Tidio itself once the script loads —
-  nothing else on this page needs to change.
-
-  The "Request a Bid" buttons dispatch a custom 'open-demo-chat'
-  event; wire it to Tidio once the bot is live, e.g.:
-    document.addEventListener('open-demo-chat', function(){
-      if (window.tidioChatApi) window.tidioChatApi.open();
-    });
-
+  The floating chat button is injected by Tidio itself once the
+  script loads — nothing else on this page needs to change.
   Swap this snippet per demo and pull it back out when done.
   ============================================================
 -->
-<!-- <script src="//code.tidio.co/REPLACE_WITH_COMMERCIAL_PLUMBING_KEY.js" async></script> -->
+<script src="//code.tidio.co/5m0igm7r1ju4cwexgq7ohl79pux4ntc7.js" async></script>
+<script>
+  // "Request a Bid" buttons dispatch 'open-demo-chat' — open the Tidio widget.
+  document.addEventListener('open-demo-chat', function(){
+    if (window.tidioChatApi) { window.tidioChatApi.open(); }
+    else { document.addEventListener('tidioChat-ready', function(){ window.tidioChatApi.open(); }, { once:true }); }
+  });
+</script>
 
 </body>
 </html>
