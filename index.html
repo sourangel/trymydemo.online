@@ -3,327 +3,399 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Generic Roofing Co. | Phoenix Metro Roofing</title>
+<title>Perfect Plumbing Co. | Commercial Plumbing Subcontractor — Phoenix Metro</title>
+<meta name="description" content="Perfect Plumbing Co. is a Phoenix-metro commercial plumbing subcontractor self-performing underground, rough-in, and finish plumbing for general contractors and owner/developers. Licensed, bonded & insured. Request a bid.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' fill='%2316232E'/%3E%3Cpath d='M8 8h8M8 8v8M36 36h-8M36 36v-8' stroke='%23B8863B' stroke-width='2' fill='none'/%3E%3Ctext x='22' y='28' font-family='Arial Narrow,sans-serif' font-size='15' font-weight='700' fill='%23B8863B' text-anchor='middle'%3EPPC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1C2430;
-    --ink-2:#161C24;
-    --paper:#F1ECE1;
-    --paper-2:#E8E1D2;
-    --accent:#B8452F;
-    --accent-2:#98371F;
-    --slate:#5B6672;
-    --line:#D8D0C0;
-    --line-dark:#31404F;
-    --max:1120px;
+    --navy:#16232E;
+    --navy-2:#0F1A22;
+    --bg:#E7EAED;
+    --panel:#FFFFFF;
+    --brass:#B8863B;
+    --brass-2:#9E7130;
+    --slate:#5B6470;
+    --line:#CDD3D9;
+    --line-dark:#2A3947;
+    --max:1160px;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
     font-family:'Inter', sans-serif;
-    background:var(--paper);
-    color:var(--ink);
-    line-height:1.55;
+    background:var(--bg);
+    color:var(--navy);
+    line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,.brand{
-    font-family:'Oswald', sans-serif;
-    letter-spacing:0.01em;
-    line-height:1.1;
+  h1,h2,h3,h4,.brand,.disp{
+    font-family:'Barlow Condensed', sans-serif;
+    letter-spacing:0.005em;
+    line-height:1.04;
+    text-transform:uppercase;
   }
   a{color:inherit; text-decoration:none;}
   .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
   img,svg{display:block; max-width:100%;}
 
-  /* focus visibility */
   a:focus-visible, button:focus-visible{
-    outline:2px solid var(--accent);
+    outline:2px solid var(--brass);
     outline-offset:3px;
   }
 
-  @media (prefers-reduced-motion: reduce){
-    *{animation:none !important; transition:none !important;}
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-block;
+    background:var(--brass);
+    color:var(--navy);
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    font-size:16px;
+    padding:13px 26px;
+    border:none;
+    border-radius:0;
+    cursor:pointer;
+    transition:background 0.15s ease, color 0.15s ease;
   }
+  .btn:hover{background:var(--brass-2); color:#fff;}
+  .btn-line{
+    background:transparent;
+    border:1.5px solid var(--navy);
+    color:var(--navy);
+  }
+  .btn-line:hover{background:var(--navy); color:var(--bg);}
+  .btn-ghost{
+    background:transparent;
+    border:1.5px solid rgba(255,255,255,0.5);
+    color:#fff;
+  }
+  .btn-ghost:hover{background:#fff; color:var(--navy); border-color:#fff;}
 
   /* ---------- Header ---------- */
   header{
-    position:sticky; top:0; z-index:40;
-    background:var(--paper);
-    border-bottom:1px solid var(--line);
+    position:sticky; top:0; z-index:50;
+    background:var(--navy);
+    border-bottom:1px solid var(--line-dark);
   }
   .nav{
     display:flex; align-items:center; justify-content:space-between;
-    padding:18px 28px;
+    padding:14px 28px;
   }
-  .brand{
-    font-size:22px; font-weight:700; color:var(--ink);
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:38px; flex:none;}
+  .logo .brand{
+    color:#fff; font-weight:700; font-size:22px; line-height:1;
   }
-  .brand span{color:var(--accent);}
-  .nav-right{display:flex; align-items:center; gap:24px;}
+  .logo .brand b{color:var(--brass); font-weight:700;}
+  .logo .brand small{
+    display:block; font-family:'Inter',sans-serif; text-transform:none;
+    letter-spacing:0.14em; font-size:9.5px; font-weight:500; color:#9FA9B4; margin-top:3px;
+  }
+  .nav-right{display:flex; align-items:center; gap:22px;}
   .nav-phone{
-    font-size:15px; font-weight:500; color:var(--slate);
-    display:none;
+    font-size:14px; font-weight:500; color:#C3CBD3; display:none;
   }
-  @media(min-width:720px){ .nav-phone{display:block;} }
-  .btn{
-    display:inline-block;
-    background:var(--accent);
-    color:#fff;
-    font-family:'Oswald', sans-serif;
-    font-weight:600;
-    font-size:15px;
-    letter-spacing:0.02em;
-    padding:12px 22px;
-    border:none;
-    border-radius:2px;
-    cursor:pointer;
-    transition:background 0.15s ease;
+  .nav-phone b{color:#fff; font-weight:600;}
+  @media(min-width:820px){ .nav-phone{display:block;} }
+  @media(max-width:520px){
+    .logo .brand{font-size:18px;}
+    .logo .brand small{display:none;}
+    .logo svg{width:32px;height:32px;}
+    .nav{padding:12px 20px;}
+    .btn{padding:11px 18px; font-size:14px;}
   }
-  .btn:hover{background:var(--accent-2);}
-  .btn-outline{
-    background:transparent;
-    border:1.5px solid var(--ink);
-    color:var(--ink);
+
+  /* ---------- Trust strip ---------- */
+  .trust{
+    background:var(--navy-2);
+    border-bottom:1px solid var(--line-dark);
   }
-  .btn-outline:hover{background:var(--ink); color:var(--paper);}
+  .trust-inner{
+    display:flex; flex-wrap:wrap; gap:10px 30px; align-items:center;
+    padding:11px 28px;
+  }
+  .trust-item{
+    display:flex; align-items:center; gap:9px;
+    font-size:12.5px; color:#C3CBD3; letter-spacing:0.02em;
+  }
+  .trust-item svg{width:15px; height:15px; color:var(--brass); flex:none;}
+  .trust-item b{color:#fff; font-weight:600;}
+  .trust-sep{width:1px; height:15px; background:var(--line-dark); display:none;}
+  @media(min-width:900px){ .trust-sep{display:block;} }
 
   /* ---------- Hero ---------- */
-  .hero{
-    position:relative;
-    overflow:hidden;
-    padding:72px 0 0;
-  }
+  .hero{ padding:68px 0 74px; }
   .hero-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:40px;
-    align-items:center;
+    display:grid; grid-template-columns:1fr; gap:44px; align-items:center;
   }
-  @media(min-width:860px){
-    .hero-grid{grid-template-columns:1.05fr 0.95fr; gap:24px;}
+  @media(min-width:900px){
+    .hero-grid{grid-template-columns:1.02fr 0.98fr; gap:52px;}
   }
-  .hero-copy h1{
-    font-size:clamp(34px, 5.4vw, 58px);
-    color:var(--ink);
-    max-width:12ch;
+  .kicker{
+    font-family:'Barlow Condensed',sans-serif; font-weight:600;
+    text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--brass); font-size:15px; margin-bottom:16px;
+    display:flex; align-items:center; gap:12px;
   }
-  .hero-copy p{
-    margin-top:20px;
-    font-size:18px;
-    color:var(--slate);
-    max-width:46ch;
+  .kicker::before{content:""; width:34px; height:2px; background:var(--brass);}
+  .hero h1{
+    font-size:clamp(40px, 6vw, 68px); font-weight:700; color:var(--navy);
+    max-width:15ch;
   }
-  .hero-cta{
-    margin-top:30px;
-    display:flex; gap:14px; flex-wrap:wrap;
+  .hero-lead{
+    margin-top:20px; font-size:18px; color:var(--slate); max-width:50ch;
   }
-  .hero-art{
-    justify-self:center;
-    opacity:0;
-    animation:rise 0.7s ease forwards 0.15s;
+  .hero-statline{
+    margin-top:26px; padding:14px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    display:flex; flex-wrap:wrap; gap:8px 22px; align-items:baseline;
+    font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:0.03em;
+    font-size:16px; color:var(--navy); font-weight:600;
   }
-  .hero-copy{
-    opacity:0;
-    animation:rise 0.7s ease forwards;
+  .hero-statline span{color:var(--slate); font-weight:500;}
+  .hero-statline i{color:var(--brass); font-style:normal;}
+  .hero-cta{ margin-top:28px; display:flex; gap:14px; flex-wrap:wrap; }
+
+  /* framed hero photo — drafting corner marks */
+  .frame{
+    position:relative;
+    padding:14px;
   }
-  @keyframes rise{
-    from{opacity:0; transform:translateY(14px);}
-    to{opacity:1; transform:translateY(0);}
+  .frame img{
+    width:100%; height:clamp(340px,42vw,480px); object-fit:cover;
+    filter:saturate(0.92) contrast(1.02);
   }
-  .roofline path{
-    stroke-dasharray:1400;
-    stroke-dashoffset:1400;
-    animation:draw 1.4s ease forwards 0.3s;
+  .frame .corner{
+    position:absolute; inset:0; width:100%; height:100%; pointer-events:none;
+  }
+  .frame .corner path{
+    fill:none; stroke:var(--brass); stroke-width:2;
+    stroke-dasharray:120; stroke-dashoffset:120;
+    animation:draw 1s ease forwards;
+  }
+  .frame .corner .c2 path{animation-delay:.18s;}
+  .frame .corner .c3 path{animation-delay:.36s;}
+  .frame .corner .c4 path{animation-delay:.54s;}
+  .frame .corner rect{
+    fill:none; stroke:var(--line-dark); stroke-width:1; opacity:0.35;
+    stroke-dasharray:1600; stroke-dashoffset:1600;
+    animation:draw 1.4s ease forwards .3s;
   }
   @keyframes draw{ to{stroke-dashoffset:0;} }
+  .frame .tag{
+    position:absolute; left:14px; bottom:14px;
+    background:var(--navy); color:#fff; font-family:'Barlow Condensed',sans-serif;
+    text-transform:uppercase; letter-spacing:0.06em; font-size:12px; font-weight:600;
+    padding:6px 12px;
+  }
+  .frame .tag i{color:var(--brass); font-style:normal;}
 
-  /* stat strip */
-  .stats{
-    margin-top:56px;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    display:flex;
-    flex-wrap:wrap;
+  /* ---------- Counters band ---------- */
+  .counters{ background:var(--navy); color:#fff; }
+  .counters-grid{
+    display:grid; grid-template-columns:1fr;
   }
-  .stat{
-    flex:1 1 200px;
-    padding:22px 28px;
-    border-right:1px solid var(--line);
-    text-align:center;
+  @media(min-width:720px){ .counters-grid{grid-template-columns:repeat(3,1fr);} }
+  .counter{
+    padding:38px 30px; border-bottom:1px solid var(--line-dark);
   }
-  .stat:last-child{border-right:none;}
-  .stat .num{
-    font-family:'Oswald', sans-serif;
-    font-size:26px;
-    font-weight:600;
-    color:var(--ink);
+  @media(min-width:720px){
+    .counter{border-bottom:none; border-right:1px solid var(--line-dark);}
+    .counter:last-child{border-right:none;}
   }
-  .stat .lbl{
-    font-size:14px;
-    color:var(--slate);
-    margin-top:2px;
+  .counter .num{
+    font-family:'Barlow Condensed',sans-serif; font-weight:700;
+    font-size:clamp(44px,5vw,62px); color:var(--brass); line-height:1;
+  }
+  .counter .lbl{
+    margin-top:8px; font-size:14px; color:#AEB8C2; letter-spacing:0.02em;
   }
 
   /* ---------- Section shells ---------- */
   section{padding:88px 0;}
-  .section-head{
-    max-width:640px;
-    margin-bottom:46px;
+  .eyebrow{
+    font-family:'Barlow Condensed',sans-serif; font-weight:600;
+    text-transform:uppercase; letter-spacing:0.08em; color:var(--brass);
+    font-size:14px; margin-bottom:14px; display:flex; align-items:center; gap:12px;
   }
-  .section-head h2{
-    font-size:clamp(28px, 3.6vw, 38px);
-  }
-  .section-head p{
-    margin-top:14px;
-    color:var(--slate);
-    font-size:17px;
-  }
+  .eyebrow::before{content:""; width:28px; height:2px; background:var(--brass);}
+  .section-head{ max-width:680px; margin-bottom:48px; }
+  .section-head h2{ font-size:clamp(30px,4vw,44px); font-weight:700; }
+  .section-head p{ margin-top:14px; color:var(--slate); font-size:17px; }
 
-  /* ---------- Services (divided list) ---------- */
-  .services-list{
-    border-top:1px solid var(--line);
+  /* ---------- Capability statement ---------- */
+  .capstmt{background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .cap-grid{ display:grid; grid-template-columns:1fr; gap:40px; }
+  @media(min-width:880px){ .cap-grid{grid-template-columns:0.9fr 1.1fr; gap:60px;} }
+  .cap-grid .lead-p{ font-size:19px; color:var(--navy); line-height:1.7; }
+  .cap-grid .lead-p strong{ color:var(--navy); font-weight:600; }
+  .spec-list{ border-top:2px solid var(--navy); }
+  .spec-row{
+    display:grid; grid-template-columns:1fr 1.4fr; gap:18px;
+    padding:14px 0; border-bottom:1px solid var(--line); align-items:baseline;
   }
-  .service-row{
-    display:grid;
-    grid-template-columns:40px 1fr;
-    gap:20px;
-    padding:26px 0;
-    border-bottom:1px solid var(--line);
-    align-items:start;
+  .spec-row dt{
+    font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.04em; font-weight:600; font-size:15px; color:var(--slate);
   }
-  .service-row .icon{color:var(--accent);}
-  .service-text h3{
-    font-size:19px;
-    font-weight:600;
-    color:var(--ink);
-  }
-  .service-text p{
-    color:var(--slate);
-    font-size:15.5px;
-    margin-top:4px;
-  }
-  @media(min-width:640px){
-    .service-text{
-      display:grid;
-      grid-template-columns:200px 1fr;
-      gap:20px;
-      align-items:start;
-    }
-    .service-text p{margin-top:0;}
-  }
+  .spec-row dd{ font-size:15.5px; color:var(--navy); font-weight:500; }
 
-  /* ---------- Why us ---------- */
-  .why-grid{
-    display:grid;
-    gap:36px;
-    grid-template-columns:1fr;
+  /* ---------- Capability tiles ---------- */
+  .tiles{
+    display:grid; grid-template-columns:1fr; gap:0;
+    border-left:1px solid var(--line); border-top:1px solid var(--line);
   }
-  @media(min-width:760px){
-    .why-grid{grid-template-columns:repeat(3, 1fr);}
+  @media(min-width:600px){ .tiles{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:920px){ .tiles{grid-template-columns:repeat(3,1fr);} }
+  .tile{
+    background:var(--panel);
+    border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:30px 28px 34px; position:relative;
+    transition:background 0.18s ease;
   }
-  .why-item .icon{color:var(--accent); margin-bottom:14px;}
-  .why-item h3{font-size:20px; margin-bottom:8px;}
-  .why-item p{color:var(--slate); font-size:15.5px;}
+  .tile:hover{ background:#fff; }
+  .tile::after{
+    content:""; position:absolute; left:0; bottom:0; width:0; height:3px;
+    background:var(--brass); transition:width 0.25s ease;
+  }
+  .tile:hover::after{ width:100%; }
+  .tile .idx{
+    font-family:'Barlow Condensed',sans-serif; font-weight:600;
+    font-size:13px; color:var(--brass); letter-spacing:0.08em;
+  }
+  .tile .ico{ color:var(--navy); margin:12px 0 16px; }
+  .tile .ico svg{ width:34px; height:34px; }
+  .tile h3{ font-size:22px; font-weight:600; color:var(--navy); }
+  .tile p{ margin-top:9px; font-size:15px; color:var(--slate); line-height:1.55; }
 
-  /* ---------- Break band ---------- */
-  .break{
-    background:var(--ink);
-    color:var(--paper);
-    padding:64px 0;
-    position:relative;
-    overflow:hidden;
+  /* ---------- Break band (image) ---------- */
+  .band{
+    position:relative; padding:96px 0; color:#fff; overflow:hidden;
+    background:var(--navy);
   }
-  .break-inner{
-    display:flex; align-items:center; justify-content:space-between;
-    flex-wrap:wrap; gap:24px;
+  .band .bg{
+    position:absolute; inset:0; z-index:0;
+    background-size:cover; background-position:center;
+    filter:grayscale(0.2) contrast(1.05) brightness(0.42);
   }
-  .break h2{
-    font-size:clamp(24px,3.4vw,32px);
-    max-width:16ch;
-    color:#fff;
-  }
-  .break-pattern{
-    position:absolute; inset:0;
-    opacity:0.08;
-    background-image:repeating-linear-gradient(45deg, var(--paper) 0 2px, transparent 2px 26px);
-    pointer-events:none;
-  }
+  .band .wrap{position:relative; z-index:2;}
+  .band-inner{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:28px; }
+  .band h2{ font-size:clamp(28px,3.6vw,40px); font-weight:700; color:#fff; max-width:20ch; }
+  .band p{ color:#C3CBD3; margin-top:12px; max-width:44ch; }
 
-  /* ---------- Testimonials ---------- */
-  .testi-list{border-top:1px solid var(--line);}
-  .testi-row{
-    display:grid;
-    grid-template-columns:52px 1fr;
-    gap:20px;
-    padding:28px 0;
+  /* ---------- Project spotlight ---------- */
+  .proj-list{ display:grid; grid-template-columns:1fr; gap:0; border-top:1px solid var(--line); }
+  .proj{
+    display:grid; grid-template-columns:1fr; gap:0;
     border-bottom:1px solid var(--line);
   }
-  .avatar{
-    width:48px; height:48px; border-radius:50%;
-    background:var(--paper-2);
+  @media(min-width:820px){
+    .proj{grid-template-columns:340px 1fr; gap:44px; align-items:center; padding:8px 0;}
+    .proj.rev{grid-template-columns:1fr 340px;}
+    .proj.rev .proj-media{order:2;}
+  }
+  .proj-media{ position:relative; padding:24px 0; }
+  .proj-media .ph{
+    width:100%; height:220px; object-fit:cover; filter:saturate(0.9) contrast(1.02);
     border:1px solid var(--line);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'Oswald', sans-serif;
-    font-weight:600;
-    color:var(--accent);
-    font-size:15px;
   }
-  .testi-row blockquote{
-    font-size:17px;
-    color:var(--ink);
+  .proj-media .ph.solid{
+    background:var(--navy); display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line-dark);
   }
-  .testi-row cite{
-    display:block;
-    margin-top:10px;
-    font-style:normal;
-    font-size:14px;
-    color:var(--slate);
+  .proj-media .ph.solid svg{ width:72px; height:72px; color:var(--brass); opacity:0.9; }
+  .proj-body{ padding:26px 0; }
+  .proj-type{
+    font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.06em; font-weight:600; font-size:13px; color:var(--brass);
   }
+  .proj-body h3{ font-size:26px; font-weight:600; color:var(--navy); margin-top:6px; }
+  .proj-meta{
+    display:flex; flex-wrap:wrap; gap:8px 28px; margin:14px 0 12px;
+  }
+  .proj-meta div{ font-size:14px; color:var(--slate); }
+  .proj-meta div b{
+    display:block; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.04em; font-size:12px; color:var(--navy); font-weight:600; margin-bottom:1px;
+  }
+  .proj-out{ font-size:16px; color:var(--navy); border-left:3px solid var(--brass); padding-left:16px; }
+
+  /* ---------- Service area ---------- */
+  .areas{ display:grid; grid-template-columns:repeat(2,1fr); gap:0;
+    border-left:1px solid var(--line); border-top:1px solid var(--line); }
+  @media(min-width:640px){ .areas{grid-template-columns:repeat(4,1fr);} }
+  .area{
+    background:var(--panel); border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:24px 22px; display:flex; align-items:center; gap:12px;
+    font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:0.03em;
+    font-weight:600; font-size:19px; color:var(--navy);
+  }
+  .area svg{ width:16px; height:16px; color:var(--brass); flex:none; }
+
+  /* ---------- Reviews ---------- */
+  .reviews{ background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .rev-grid{ display:grid; grid-template-columns:1fr; gap:0; border-top:1px solid var(--line); }
+  @media(min-width:780px){ .rev-grid{grid-template-columns:repeat(2,1fr);} }
+  .review{
+    padding:34px 32px; border-bottom:1px solid var(--line);
+  }
+  @media(min-width:780px){
+    .review{border-right:1px solid var(--line);}
+    .review:nth-child(2n){border-right:none;}
+  }
+  .review .mark{ color:var(--brass); font-family:'Barlow Condensed',sans-serif; font-size:44px; line-height:0.4; height:20px; }
+  .review blockquote{ font-size:17.5px; color:var(--navy); line-height:1.6; }
+  .review cite{
+    display:block; margin-top:18px; font-style:normal; font-size:14px; color:var(--slate);
+  }
+  .review cite b{ color:var(--navy); font-weight:600; }
 
   /* ---------- Final CTA ---------- */
-  .cta-final{
-    text-align:center;
-    padding-top:20px;
-  }
-  .cta-final h2{font-size:clamp(26px,3.6vw,36px); max-width:16ch; margin:0 auto 18px;}
-  .cta-final p{color:var(--slate); max-width:46ch; margin:0 auto 28px;}
+  .final{ background:var(--navy); color:#fff; }
+  .final-grid{ display:grid; grid-template-columns:1fr; gap:30px; align-items:center; }
+  @media(min-width:820px){ .final-grid{grid-template-columns:1.4fr 1fr;} }
+  .final h2{ font-size:clamp(30px,4vw,46px); font-weight:700; color:#fff; max-width:16ch; }
+  .final p{ color:#C3CBD3; margin-top:14px; max-width:46ch; }
+  .final .cta-side{ display:flex; flex-direction:column; gap:14px; }
+  .final .cta-side .line{ font-size:14px; color:#9FA9B4; }
 
   /* ---------- Footer ---------- */
-  footer{
-    background:var(--ink-2);
-    color:var(--paper);
-    padding:56px 0 28px;
-  }
+  footer{ background:var(--navy-2); color:#fff; padding:60px 0 26px; }
   .foot-grid{
-    display:grid;
-    gap:32px;
-    grid-template-columns:1fr;
-    padding-bottom:32px;
+    display:grid; gap:36px; grid-template-columns:1fr; padding-bottom:34px;
     border-bottom:1px solid var(--line-dark);
   }
-  @media(min-width:720px){
-    .foot-grid{grid-template-columns:1.3fr 1fr 1fr;}
+  @media(min-width:760px){ .foot-grid{grid-template-columns:1.5fr 1fr 1fr 1.2fr;} }
+  .foot-brand .logo .brand{color:#fff;}
+  .foot-note{ color:#98A2AD; font-size:14px; margin-top:14px; max-width:34ch; }
+  .foot-lic{
+    margin-top:16px; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.04em; font-size:13.5px; color:var(--brass); font-weight:600;
   }
-  footer .brand{color:#fff;}
-  footer .brand span{color:var(--accent);}
-  footer p, footer li{color:#AEB6C0; font-size:14.5px;}
   footer h4{
-    font-family:'Inter', sans-serif;
-    font-size:14px;
-    font-weight:600;
-    color:#fff;
-    margin-bottom:12px;
+    font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:0.05em;
+    font-size:15px; font-weight:600; color:#fff; margin-bottom:14px;
   }
   footer ul{list-style:none;}
-  footer li{margin-bottom:6px;}
+  footer li{ color:#AEB8C2; font-size:14.5px; margin-bottom:8px; display:flex; gap:9px; align-items:flex-start; }
+  footer li svg{width:14px;height:14px;color:var(--brass);flex:none;margin-top:4px;}
   .foot-bottom{
-    padding-top:24px;
-    font-size:13px;
-    color:#7E8794;
+    padding-top:22px; font-size:13px; color:#7E8A96;
     display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    .reveal{opacity:1; transform:none;}
+    .frame .corner path, .frame .corner rect{stroke-dashoffset:0 !important;}
   }
 </style>
 </head>
@@ -331,217 +403,416 @@
 
 <header>
   <div class="wrap nav">
-    <div class="brand">Generic<span>&nbsp;Roofing</span> Co.</div>
+    <a class="logo" href="#top" aria-label="Perfect Plumbing Co. home">
+      <svg viewBox="0 0 44 44" role="img" aria-label="Perfect Plumbing Co. monogram">
+        <rect width="44" height="44" fill="#16232E"/>
+        <path d="M7 7h9M7 7v9M37 37h-9M37 37v-9" stroke="#B8863B" stroke-width="2" fill="none"/>
+        <text x="22" y="29" font-family="'Barlow Condensed',sans-serif" font-size="19" font-weight="700" fill="#B8863B" text-anchor="middle" letter-spacing="0.5">PPC</text>
+      </svg>
+      <span class="brand">Perfect <b>Plumbing</b> Co.
+        <small>Commercial Plumbing Subcontractor</small>
+      </span>
+    </a>
     <div class="nav-right">
-      <span class="nav-phone">(602) 345-6789</span>
-      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Estimate</button>
+      <span class="nav-phone">Estimating &nbsp;<b>(602) 555-0180</b></span>
+      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Request a Bid</button>
     </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <h1>Roofs built to outlast the guarantee.</h1>
-        <p>Repairs, replacements, and storm damage — handled by a crew that's been doing this since before shingles came with warranties.</p>
-        <div class="hero-cta">
-          <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Estimate</button>
-          <a href="#services" class="btn btn-outline">See our work</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <svg class="roofline" width="380" height="280" viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a pitched roof with tile courses">
-          <path d="M30 200 L190 60 L350 200" stroke="#1C2430" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M30 200 L30 240 M350 200 L350 240" stroke="#5B6672" stroke-width="3" stroke-linecap="round"/>
-          <path d="M10 242 L370 242" stroke="#5B6672" stroke-width="3" stroke-linecap="round"/>
-          <path d="M69 180 L84 166 M101 152 L116 138 M133 124 L148 110 M165 96 L180 82" stroke="#B8452F" stroke-width="3" stroke-linecap="round"/>
-          <path d="M215 96 L230 109 M247 124 L262 137 M279 152 L294 165 M311 180 L326 193" stroke="#B8452F" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="95" cy="222" r="26" fill="#F1ECE1" stroke="#1C2430" stroke-width="3"/>
-          <text x="95" y="227" font-family="Oswald, sans-serif" font-size="15" font-weight="600" fill="#B8452F" text-anchor="middle">GRC</text>
-        </svg>
-      </div>
+<!-- Trust strip: first scan for a GC estimator -->
+<div class="trust" id="top">
+  <div class="wrap trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+      <b>Licensed, Bonded &amp; Insured</b>
     </div>
-
-    <div class="stats">
-      <div class="stat"><div class="num">30+</div><div class="lbl">Years in business</div></div>
-      <div class="stat"><div class="num">Licensed</div><div class="lbl">Bonded &amp; insured</div></div>
-      <div class="stat"><div class="num">4.9</div><div class="lbl">Rating, 500+ reviews</div></div>
-      <div class="stat"><div class="num">Free</div><div class="lbl">Estimates, always</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>What we handle</h2>
-      <p>From a single cracked tile to a full commercial re-roof — if it's on top of a building, it's on our list.</p>
-    </div>
-    <div class="services-list">
-
-      <div class="service-row">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20h18M5 20V10l7-6 7 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
-        <div class="service-text">
-          <h3>Roof Repair</h3>
-          <p>Leaks, cracked tile, storm damage — diagnosed right and fixed fast.</p>
-        </div>
-      </div>
-
-      <div class="service-row">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M4 14h16"/></svg></div>
-        <div class="service-text">
-          <h3>Full Replacement</h3>
-          <p>Tile, shingle, or foam — installed to last, not just to pass inspection.</p>
-        </div>
-      </div>
-
-      <div class="service-row">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 14a4 4 0 0 1 4-4h1a5 5 0 0 1 10 1 3.5 3.5 0 0 1-1 6.9H7a3 3 0 0 1-3-3.9Z"/><path d="M12 18v3M9 21h6"/></svg></div>
-        <div class="service-text">
-          <h3>Storm &amp; Insurance Claims</h3>
-          <p>We'll walk the roof and the paperwork with you, start to payout.</p>
-        </div>
-      </div>
-
-      <div class="service-row">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
-        <div class="service-text">
-          <h3>Roof Inspections</h3>
-          <p>A straight answer on what your roof actually needs — nothing added.</p>
-        </div>
-      </div>
-
-      <div class="service-row">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l9-4 9 4"/></svg></div>
-        <div class="service-text">
-          <h3>Flat &amp; Foam Roofing</h3>
-          <p>Commercial-grade coatings for flat and low-slope roofs, residential to industrial.</p>
-        </div>
-      </div>
-
-      <div class="service-row">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <div class="service-text">
-          <h3>Maintenance &amp; Cleaning</h3>
-          <p>Keep small problems from becoming big, expensive ones.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Why homeowners call us back</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-item">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>We show up.</h3>
-        <p>Real appointment windows and same-day callbacks — no ghosting after the estimate.</p>
-      </div>
-      <div class="why-item">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>We tell you the truth.</h3>
-        <p>If it's a $200 fix, we're not selling you a $20,000 roof.</p>
-      </div>
-      <div class="why-item">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
-        <h3>We've done this before.</h3>
-        <p>Three decades of Arizona roofs — tile, shingle, and foam.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="break">
-  <div class="break-pattern"></div>
-  <div class="wrap break-inner">
-    <h2>Every roof tells a story. We make sure yours has a good one.</h2>
-    <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Start with a free estimate</button>
+    <span class="trust-sep"></span>
+    <div class="trust-item"><b>AZ ROC #327451</b>&nbsp;· L-37 Commercial Plumbing</div>
+    <span class="trust-sep"></span>
+    <div class="trust-item">Bonding capacity <b>$8M single / $20M aggregate</b></div>
+    <span class="trust-sep"></span>
+    <div class="trust-item">$5M general liability · EMR <b>0.72</b></div>
   </div>
 </div>
 
+<main>
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="kicker">Phoenix Metro · New Construction &amp; Tenant Improvement</div>
+      <h1>Commercial plumbing built to the spec and the schedule.</h1>
+      <p class="hero-lead">A Phoenix-metro subcontractor self-performing underground, rough-in, and finish plumbing for general contractors and owner/developers — coordinated in BIM and turned over inspection-ready.</p>
+      <div class="hero-statline">
+        <i>$150K&ndash;$5M+</i> project range <span>/</span> <i>Self-performed</i> field crew <span>/</span> <i>22 yrs</i> in the trade
+      </div>
+      <div class="hero-cta">
+        <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Request a Bid</button>
+        <a href="#capabilities" class="btn btn-line">View Capabilities</a>
+      </div>
+    </div>
+
+    <div class="frame reveal">
+      <img src="assets/hero-mechanical.jpg" alt="Large-diameter flanged mechanical plumbing piping in a commercial building">
+      <svg class="corner" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <rect x="1" y="1" width="98" height="98" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <svg class="corner" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">
+        <g class="c1"><path d="M2 40 L2 2 L40 2"/></g>
+        <g class="c2"><path d="M360 2 L398 2 L398 40"/></g>
+        <g class="c3"><path d="M398 260 L398 298 L360 298"/></g>
+        <g class="c4"><path d="M40 298 L2 298 L2 260"/></g>
+      </svg>
+      <span class="tag"><i>DWG</i>&nbsp; Mechanical Room · Domestic &amp; Waste</span>
+    </div>
+  </div>
+</section>
+
+<!-- Counters -->
+<div class="counters">
+  <div class="wrap counters-grid" id="counters">
+    <div class="counter">
+      <div class="num" data-count="22" data-suffix="">0</div>
+      <div class="lbl">Years operating in the Phoenix metro</div>
+    </div>
+    <div class="counter">
+      <div class="num" data-count="6" data-suffix="">0</div>
+      <div class="lbl">Commercial project types self-performed</div>
+    </div>
+    <div class="counter">
+      <div class="num" data-count="98" data-suffix="%">0</div>
+      <div class="lbl">On-schedule rough-in inspection rate</div>
+    </div>
+  </div>
+</div>
+
+<!-- Capability statement -->
+<section class="capstmt" id="capabilities">
+  <div class="wrap">
+    <div class="eyebrow reveal">Capability Statement</div>
+    <div class="cap-grid">
+      <p class="lead-p reveal">Perfect Plumbing Co. self-performs <strong>underground, rough-in, and finish plumbing</strong> on new-construction and major tenant-improvement projects across the Phoenix metro — from roughly <strong>$150K to $5M+</strong> in contract value.</p>
+      <div class="reveal">
+        <dl class="spec-list">
+          <div class="spec-row"><dt>Self-Performed Scope</dt><dd>Underground / DWV rough-in / domestic water / gas / finish plumbing &amp; fixtures</dd></div>
+          <div class="spec-row"><dt>Specialty Certifications</dt><dd>Medical gas installation &amp; brazing (ASSE 6010) · backflow assemblies</dd></div>
+          <div class="spec-row"><dt>Typical Project Size</dt><dd>$150,000 &ndash; $5,000,000+ · single-project bonding to $8M</dd></div>
+          <div class="spec-row"><dt>Delivery</dt><dd>GC bid packages &amp; direct owner/developer contracts · BIM coordination</dd></div>
+          <div class="spec-row"><dt>Safety</dt><dd>Current EMR 0.72 · site-specific safety plans · OSHA-30 supervision</dd></div>
+          <div class="spec-row"><dt>Licensing</dt><dd>AZ ROC #327451 (L-37) · $5M general liability · fully bonded &amp; insured</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Capability tiles -->
 <section>
   <div class="wrap">
-    <div class="section-head">
-      <h2>What people say after the job's done</h2>
+    <div class="section-head reveal">
+      <div class="eyebrow">What We Build</div>
+      <h2>Commercial project types we self-perform</h2>
+      <p>Estimating and field crews organized around the building types that make up the Phoenix-metro commercial pipeline.</p>
     </div>
-    <div class="testi-list">
-      <div class="testi-row">
-        <div class="avatar">MT</div>
-        <div>
-          <blockquote>"They found the actual leak instead of just patching the ceiling. Fixed in a day."</blockquote>
-          <cite>M.T. — Chandler, AZ</cite>
+    <div class="tiles reveal">
+      <div class="tile">
+        <div class="idx">01</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M12 8v6M9 11h6"/><path d="M3 21h18"/></svg></div>
+        <h3>Hospitals &amp; Healthcare</h3>
+        <p>Medical-gas, high-purity, and domestic systems for acute-care and outpatient facilities — installed to inspection-critical tolerances.</p>
+      </div>
+      <div class="tile">
+        <div class="idx">02</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V7h14v14"/><path d="M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div>
+        <h3>Hotels &amp; Hospitality</h3>
+        <p>High-volume domestic water, waste, and repeatable guest-room fixture packages for hospitality towers and renovations.</p>
+      </div>
+      <div class="tile">
+        <div class="idx">03</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v15"/><path d="M3 20h13"/><path d="M15 9h2.5a1.5 1.5 0 0 1 1.5 1.5V17a2 2 0 0 0 2 2"/><path d="M7 8h5"/></svg></div>
+        <h3>Gas Stations &amp; C-Stores</h3>
+        <p>Underground utility, grease, and restroom systems for ground-up forecourt and convenience-store new builds.</p>
+      </div>
+      <div class="tile">
+        <div class="idx">04</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l7-4v4l7-4v16"/><path d="M3 21h18"/><path d="M7 13v4M14 13v4"/></svg></div>
+        <h3>Multi-Family</h3>
+        <p>Repeatable riser layouts and unit rough-in for podium and wrap apartment construction, phased to the framing schedule.</p>
+      </div>
+      <div class="tile">
+        <div class="idx">05</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V10l6-3v3l6-3v3l6-3v14"/><path d="M3 21h18"/></svg></div>
+        <h3>Light Industrial</h3>
+        <p>Process, compressed-air, and sanitary systems for warehouse, distribution, and manufacturing shell &amp; TI work.</p>
+      </div>
+      <div class="tile">
+        <div class="idx">06</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9l1-4h14l1 4"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Retail &amp; Restaurant</h3>
+        <p>Grease interceptors, kitchen rough-in, and fast-turn tenant-improvement fit-outs coordinated around opening dates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Break band -->
+<div class="band">
+  <div class="bg" style="background-image:url('assets/band-steelframe.jpg')"></div>
+  <div class="wrap band-inner">
+    <div>
+      <h2>Bid packages priced straight. Scope self-performed.</h2>
+      <p>Send us the plans and the bid date — we&rsquo;ll return a clean, complete number and the crew to back it up.</p>
+    </div>
+    <button class="btn btn-ghost" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Request a Bid</button>
+  </div>
+</div>
+
+<!-- Project spotlight -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Project Spotlight</div>
+      <h2>Recent work across the metro</h2>
+      <p>A sample of commercial builds delivered for general contractors and owner/developers.</p>
+    </div>
+
+    <div class="proj-list">
+      <div class="proj reveal">
+        <div class="proj-media">
+          <img class="ph" src="assets/project-healthcare.jpg" alt="Modern healthcare facility exterior with clad panel surgery wing">
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Hospitals &amp; Healthcare</div>
+          <h3>Valley Ridge Medical Center &mdash; Outpatient Wing Addition</h3>
+          <div class="proj-meta">
+            <div><b>Building Type</b>Outpatient surgical</div>
+            <div><b>Scope</b>~40,000 sq ft</div>
+            <div><b>Delivery</b>GC bid package</div>
+          </div>
+          <p class="proj-out">Medical-gas and domestic systems delivered two weeks ahead of the finish schedule with zero inspection rejections.</p>
         </div>
       </div>
-      <div class="testi-row">
-        <div class="avatar">RK</div>
-        <div>
-          <blockquote>"Got three quotes. These were the only ones who didn't try to upsell a full tear-off."</blockquote>
-          <cite>R.K. — Peoria, AZ</cite>
+
+      <div class="proj rev reveal">
+        <div class="proj-media">
+          <div class="ph solid" role="img" aria-label="Hospitality renovation project icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M5 21V7h14v14"/><path d="M8 11h2M14 11h2M8 15h2M14 15h2M11 21v-4h2v4"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Hotels &amp; Hospitality</div>
+          <h3>Sonoran Grand Hotel &mdash; 120-Room Renovation</h3>
+          <div class="proj-meta">
+            <div><b>Building Type</b>Occupied hospitality tower</div>
+            <div><b>Scope</b>~85,000 sq ft · 120 rooms</div>
+            <div><b>Delivery</b>Owner contract</div>
+          </div>
+          <p class="proj-out">Fixture and riser replacement phased floor-by-floor with no guest displacement and no missed turnover dates.</p>
         </div>
       </div>
-      <div class="testi-row">
-        <div class="avatar">SD</div>
-        <div>
-          <blockquote>"Our insurance claim was a mess until they got involved. Roof's done, claim's paid."</blockquote>
-          <cite>S.D. — Scottsdale, AZ</cite>
+
+      <div class="proj reveal">
+        <div class="proj-media">
+          <div class="ph solid" role="img" aria-label="Ground-up fuel and market project icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v15"/><path d="M3 20h13"/><path d="M15 9h2.5a1.5 1.5 0 0 1 1.5 1.5V17a2 2 0 0 0 2 2"/><path d="M7 8h5"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Gas Stations &amp; C-Stores</div>
+          <h3>Roadrunner Fuel &amp; Market &mdash; Ground-Up New Build</h3>
+          <div class="proj-meta">
+            <div><b>Building Type</b>Fuel &amp; convenience</div>
+            <div><b>Scope</b>~4,500 sq ft</div>
+            <div><b>Delivery</b>GC bid package</div>
+          </div>
+          <p class="proj-out">Underground, restroom, and grease systems completed from slab to Certificate of Occupancy in eleven weeks.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-final">
+<!-- Service area -->
+<section>
   <div class="wrap">
-    <h2>Got a roof question? Ask us anything.</h2>
-    <p>Use the chat in the corner — tell us what's going on and we'll get back to you fast.</p>
+    <div class="section-head reveal">
+      <div class="eyebrow">Where We Work</div>
+      <h2>Serving the greater Phoenix metro</h2>
+      <p>Field crews mobilized across the Valley for new construction and tenant-improvement plumbing.</p>
+    </div>
+    <div class="areas reveal">
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Phoenix</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Scottsdale</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Mesa</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chandler</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tempe</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Gilbert</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Surprise</div>
+      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Goodyear</div>
+    </div>
   </div>
 </section>
+
+<!-- Reviews -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">On the Record</div>
+      <h2>What the GCs and developers say</h2>
+      <p>Feedback from the project managers and superintendents who put us on their bid lists.</p>
+    </div>
+    <div class="rev-grid reveal">
+      <div class="review">
+        <div class="mark">&ldquo;</div>
+        <blockquote>Perfect Plumbing hit every rough-in inspection on schedule across our 85-unit build &mdash; no punch-list surprises at turnover.</blockquote>
+        <cite><b>M. Reyes</b>, Project Manager &mdash; Cardinal Peak Builders</cite>
+      </div>
+      <div class="review">
+        <div class="mark">&ldquo;</div>
+        <blockquote>Their foreman ran the underground coordination in our BIM meetings like he&rsquo;d built the model himself. Zero RFIs on the plumbing scope.</blockquote>
+        <cite><b>D. Whitfield</b>, Senior Superintendent &mdash; Ironwood Construction Group</cite>
+      </div>
+      <div class="review">
+        <div class="mark">&ldquo;</div>
+        <blockquote>We&rsquo;ve handed them three ground-up C-stores now. They price it straight, self-perform it, and hit the C-of-O date every time.</blockquote>
+        <cite><b>L. Tran</b>, Development Manager &mdash; Mesa Vista Partners</cite>
+      </div>
+      <div class="review">
+        <div class="mark">&ldquo;</div>
+        <blockquote>Med-gas certification and a clean inspection history made them an easy prequal call for our outpatient project.</blockquote>
+        <cite><b>K. Ellsworth</b>, Preconstruction Director &mdash; Summit Contracting</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final">
+  <div class="wrap final-grid">
+    <div class="reveal">
+      <h2>Have a project going out to bid?</h2>
+      <p>Send the plans, the bid date, and the scope. We&rsquo;ll return a complete, self-performed number.</p>
+    </div>
+    <div class="cta-side reveal">
+      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Request a Bid</button>
+      <span class="line">Or reach estimating directly at <b style="color:#fff">(602) 555-0180</b></span>
+      <span class="line">Prequal packages &amp; references available on request.</span>
+    </div>
+  </div>
+</section>
+</main>
 
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div>
-        <div class="brand" style="font-size:20px; margin-bottom:10px;">Generic<span>&nbsp;Roofing</span> Co.</div>
-        <p>Family-owned roofing serving the Greater Phoenix metro. Licensed, bonded, and insured.</p>
+      <div class="foot-brand">
+        <div class="logo" style="align-items:flex-start;">
+          <svg viewBox="0 0 44 44" width="38" height="38" role="img" aria-label="Perfect Plumbing Co. monogram">
+            <rect width="44" height="44" fill="#16232E" stroke="#2A3947"/>
+            <path d="M7 7h9M7 7v9M37 37h-9M37 37v-9" stroke="#B8863B" stroke-width="2" fill="none"/>
+            <text x="22" y="29" font-family="'Barlow Condensed',sans-serif" font-size="19" font-weight="700" fill="#B8863B" text-anchor="middle" letter-spacing="0.5">PPC</text>
+          </svg>
+          <span class="brand" style="font-size:20px;">Perfect <b style="color:var(--brass)">Plumbing</b> Co.</span>
+        </div>
+        <p class="foot-note">Phoenix-metro commercial plumbing subcontractor for general contractors and owner/developers.</p>
+        <div class="foot-lic">AZ ROC #327451 · Licensed, Bonded &amp; Insured</div>
       </div>
+
       <div>
-        <h4>Service Area</h4>
-        <p>Phoenix - Scottsdale - Mesa - Chandler - Glendale - Peoria - Tempe - Gilbert</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
+        <h4>Service Areas</h4>
         <ul>
-          <li>(602) 345-6789</li>
-          <li>hello@genericroofingco.com</li>
-          <li>Mon–Sat, 7am–6pm</li>
+          <li>Phoenix &middot; Scottsdale</li>
+          <li>Mesa &middot; Chandler</li>
+          <li>Tempe &middot; Gilbert</li>
+          <li>Surprise &middot; Goodyear</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Why Perfect Plumbing</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Self-performed field crew</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>On-schedule inspection record</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Medical-gas certified</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Bonded to $8M single project</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Estimating</h4>
+        <ul>
+          <li>(602) 555-0180</li>
+          <li>estimating@perfectplumbingco.com</li>
+          <li>Bid documents &amp; prequal packages welcome</li>
+          <li>Mon&ndash;Fri, 7am&ndash;5pm</li>
         </ul>
       </div>
     </div>
-    <div class="wrap foot-bottom" style="padding:0;">
-      <span>© 2026 Generic Roofing Co. Licensed &amp; Insured. ROC# 000000</span>
+    <div class="foot-bottom">
+      <span>© 2026 Perfect Plumbing Co. · AZ ROC #327451 (L-37) · Licensed, Bonded &amp; Insured</span>
       <span>This is a demo site.</span>
     </div>
   </div>
 </footer>
 
+<script>
+  // Scroll reveal
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:0.14});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+
+  // Counter animation (first time into view)
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var nums = document.querySelectorAll('#counters .num');
+    function run(el){
+      var target = parseFloat(el.getAttribute('data-count'));
+      var suffix = el.getAttribute('data-suffix') || '';
+      if(reduce){ el.textContent = target + suffix; return; }
+      var dur = 1400, start = null;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start)/dur, 1);
+        var eased = 1 - Math.pow(1-p, 3);
+        el.textContent = Math.round(target*eased) + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    if(!('IntersectionObserver' in window)){ nums.forEach(run); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ run(en.target); io.unobserve(en.target); } });
+    }, {threshold:0.5});
+    nums.forEach(function(n){ io.observe(n); });
+  })();
+</script>
+
 <!--
   ============================================================
-  TIDIO WIDGET — paste the real embed snippet for whichever
-  contractor's cloned bot you're demoing, right before </body>.
+  TIDIO WIDGET — Perfect Plumbing Co. (commercial plumbing)
+  bot_template: commercial_plumbing
 
-  The floating chat button is injected by Tidio itself once the
-  script loads — nothing else on this page needs to change.
-  Swap this snippet per demo, and remember to pull it back out
-  (or swap to the next contractor) when you're done.
+  Paste the real Tidio embed snippet for the commercial-plumbing
+  bot right here, immediately before </body>. The floating chat
+  button is injected by Tidio itself once the script loads —
+  nothing else on this page needs to change.
+
+  The "Request a Bid" buttons dispatch a custom 'open-demo-chat'
+  event; wire it to Tidio once the bot is live, e.g.:
+    document.addEventListener('open-demo-chat', function(){
+      if (window.tidioChatApi) window.tidioChatApi.open();
+    });
+
+  Swap this snippet per demo and pull it back out when done.
   ============================================================
 -->
-<script src="//code.tidio.co/5m0igm7r1ju4cwexgq7ohl79pux4ntc7.js" async></script>
+<!-- <script src="//code.tidio.co/REPLACE_WITH_COMMERCIAL_PLUMBING_KEY.js" async></script> -->
 
 </body>
 </html>
