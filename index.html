@@ -3,216 +3,232 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Desert Air Comfort | Residential AC Repair & Installation — Phoenix Metro</title>
-<meta name="description" content="Desert Air Comfort keeps Phoenix-metro homes cool — AC repair, installation, maintenance, and emergency service. Licensed, bonded & insured. Same-day service, upfront pricing. Schedule service today.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%233E6B8A'/%3E%3Cg stroke='%23fff' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M24 12v24M12 24h24M15.5 15.5l17 17M32.5 15.5l-17 17'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='4' fill='%23E8792C'/%3E%3C/svg%3E">
+<title>Sonoran Yard Co. | Landscape, Hardscape & Irrigation — Phoenix Metro</title>
+<meta name="description" content="Sonoran Yard Co. designs and builds low-water desert landscapes, paver patios, and smart irrigation across the West Valley — Goodyear, Avondale, Surprise, Phoenix & Glendale. Get a free quote.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%237A8B6F'/%3E%3Ccircle cx='24' cy='19' r='7' fill='%23C1663A'/%3E%3Cpath d='M12 34c4-6 8-6 12-6s8 0 12 6' stroke='%23F2ECE1' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --blue:#3E6B8A;
-    --blue-dk:#325975;
-    --blue-deep:#2A4E67;
-    --bg:#F7F9FA;
-    --panel:#FFFFFF;
-    --orange:#E8792C;
-    --orange-dk:#CE6820;
-    --ink:#1E2B33;
-    --muted:#5C6B74;
-    --line:#E1E7EA;
+    --sage:#7A8B6F;
+    --sage-dk:#63735A;
+    --terra:#C1663A;
+    --terra-dk:#A9542D;
+    --sand:#F2ECE1;
+    --sand-2:#E9E1D2;
+    --ink:#2B2B26;
+    --muted:#6E6B62;
+    --white:#FFFFFF;
+    --line:#DED6C7;
     --max:1160px;
-    --shadow:0 12px 30px rgba(30,43,51,0.09);
-    --shadow-sm:0 4px 14px rgba(30,43,51,0.07);
+    --shadow:0 14px 34px rgba(43,43,38,0.10);
+    --shadow-sm:0 6px 18px rgba(43,43,38,0.08);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
-  body{ font-family:'Inter',sans-serif; background:var(--bg); color:var(--ink);
-    line-height:1.6; -webkit-font-smoothing:antialiased; }
-  h1,h2,h3,h4,.brand{ font-family:'Work Sans',sans-serif; line-height:1.15; letter-spacing:-0.015em; }
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--sand);
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,.brand{ font-family:'Poppins', sans-serif; line-height:1.14; letter-spacing:-0.01em; }
   a{color:inherit; text-decoration:none;}
   img,svg{display:block; max-width:100%;}
-  .wrap{ max-width:var(--max); margin:0 auto; padding:0 24px; }
-  a:focus-visible, button:focus-visible{ outline:2.5px solid var(--orange); outline-offset:3px; }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  a:focus-visible, button:focus-visible{ outline:2.5px solid var(--terra); outline-offset:3px; }
 
-  .btn{ display:inline-flex; align-items:center; gap:9px; background:var(--orange); color:#fff;
-    font-family:'Work Sans',sans-serif; font-weight:600; font-size:15.5px; padding:13px 24px;
-    border:none; border-radius:8px; cursor:pointer; box-shadow:var(--shadow-sm);
-    transition:background .15s ease, transform .15s ease; }
-  .btn:hover{ background:var(--orange-dk); transform:translateY(-2px); }
-  .btn-blue{ background:var(--blue); } .btn-blue:hover{ background:var(--blue-dk); }
-  .btn-ghost{ background:rgba(255,255,255,0.12); color:#fff; border:1.5px solid rgba(255,255,255,0.6); box-shadow:none; }
-  .btn-ghost:hover{ background:#fff; color:var(--blue); }
+  /* Buttons */
+  .btn{
+    display:inline-flex; align-items:center; gap:9px;
+    background:var(--terra); color:#fff;
+    font-family:'Poppins',sans-serif; font-weight:600; font-size:15.5px;
+    padding:13px 24px; border:none; border-radius:999px; cursor:pointer;
+    box-shadow:var(--shadow-sm); transition:transform .15s ease, background .15s ease;
+  }
+  .btn:hover{ background:var(--terra-dk); transform:translateY(-2px); }
+  .btn-ghost{ background:rgba(255,255,255,0.14); color:#fff; box-shadow:none; border:1.5px solid rgba(255,255,255,0.55); }
+  .btn-ghost:hover{ background:#fff; color:var(--ink); }
+  .btn-sage{ background:var(--sage); }
+  .btn-sage:hover{ background:var(--sage-dk); }
 
   /* Header */
-  header{ position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line); }
-  .nav{ display:flex; align-items:center; justify-content:space-between; padding:12px 24px; gap:16px; }
-  .logo{ display:flex; align-items:center; gap:11px; }
-  .logo svg{ width:40px; height:40px; flex:none; }
-  .logo .brand{ font-weight:700; font-size:19.5px; color:var(--ink); line-height:1.02; }
-  .logo .brand span{ color:var(--blue); }
-  .logo .brand small{ display:block; font-family:'Inter',sans-serif; font-weight:500; font-size:10.5px;
-    letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-top:2px; }
-  .nav-links{ display:none; gap:26px; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(242,236,225,0.92);
+    backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 24px; gap:16px; }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo svg{ width:42px; height:42px; flex:none; }
+  .logo .brand{ font-weight:700; font-size:20px; color:var(--ink); line-height:1.05; }
+  .logo .brand span{ color:var(--sage-dk); }
+  .nav-links{ display:none; gap:28px; }
   .nav-links a{ font-weight:500; font-size:15px; color:var(--ink); transition:color .15s ease; }
-  .nav-links a:hover{ color:var(--orange); }
-  .nav-right{ display:flex; align-items:center; gap:16px; }
-  .nav-phone{ display:none; text-align:right; line-height:1.1; }
-  .nav-phone small{ display:block; font-size:11px; color:var(--muted); }
-  .nav-phone b{ font-family:'Work Sans',sans-serif; font-size:18px; color:var(--blue); }
-  @media(min-width:960px){ .nav-links{display:flex;} .nav-phone{display:block;} }
+  .nav-links a:hover{ color:var(--terra); }
+  .nav-right{ display:flex; align-items:center; gap:18px; }
+  .nav-phone{ display:none; font-weight:600; font-size:15px; color:var(--sage-dk); }
+  @media(min-width:900px){ .nav-links{display:flex;} .nav-phone{display:inline;} }
 
   /* Hero */
-  .hero{ position:relative; color:#fff; overflow:hidden; }
-  .hero .bg{ position:absolute; inset:0; background:url('assets/hero-home.jpg') center/cover; }
-  .hero .scrim{ position:absolute; inset:0;
-    background:linear-gradient(105deg, rgba(30,43,51,0.90) 0%, rgba(42,78,103,0.82) 45%, rgba(62,107,138,0.55) 100%); }
-  .hero .wrap{ position:relative; z-index:2; padding:84px 24px 76px; }
-  .hero-inner{ max-width:640px; }
-  .heat-tag{ display:inline-flex; align-items:center; gap:8px; background:rgba(232,121,44,0.18);
-    border:1px solid rgba(232,121,44,0.5); color:#FFD9BB; font-weight:600; font-size:13px;
-    padding:7px 14px; border-radius:999px; margin-bottom:20px; }
-  .heat-tag svg{ width:15px; height:15px; }
-  .hero h1{ font-size:clamp(34px,5.2vw,56px); font-weight:700; color:#fff; }
-  .hero h1 span{ color:#FFB77E; }
-  .hero p{ margin-top:18px; font-size:18px; color:rgba(255,255,255,0.9); max-width:52ch; }
-  .hero-cta{ margin-top:28px; display:flex; gap:14px; flex-wrap:wrap; }
-  .badges{ margin-top:34px; display:flex; flex-wrap:wrap; gap:10px 22px; }
-  .badges .b{ display:flex; align-items:center; gap:9px; font-size:14px; color:rgba(255,255,255,0.92); font-weight:500; }
-  .badges .b svg{ width:18px; height:18px; color:#FFB77E; flex:none; }
+  .hero{ padding:44px 0 20px; }
+  .hero-grid{ display:grid; grid-template-columns:1fr; gap:36px; align-items:center; }
+  @media(min-width:900px){ .hero-grid{ grid-template-columns:1.02fr 1fr; gap:52px; padding-top:24px; } }
+  .badge{
+    display:inline-flex; align-items:center; gap:8px; background:var(--sand-2);
+    border:1px solid var(--line); color:var(--sage-dk); font-weight:600; font-size:13px;
+    padding:7px 14px; border-radius:999px; margin-bottom:20px;
+  }
+  .badge .dot{ width:8px; height:8px; border-radius:50%; background:var(--terra); }
+  .hero h1{ font-size:clamp(36px,5.4vw,58px); font-weight:700; color:var(--ink); }
+  .hero h1 em{ font-style:normal; color:var(--terra); }
+  .hero-lead{ margin-top:18px; font-size:18px; color:var(--muted); max-width:48ch; }
+  .hero-cta{ margin-top:28px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .hero-cta .note{ font-size:14px; color:var(--muted); }
+  .hero-media{ position:relative; }
+  .hero-media img{ width:100%; height:clamp(320px,44vw,500px); object-fit:cover;
+    border-radius:26px; box-shadow:var(--shadow); }
+  .hero-chip{
+    position:absolute; left:18px; bottom:18px; background:var(--white);
+    border-radius:16px; padding:12px 16px; box-shadow:var(--shadow-sm);
+    display:flex; align-items:center; gap:12px;
+  }
+  .hero-chip .ic{ width:38px; height:38px; border-radius:11px; background:var(--sage);
+    display:flex; align-items:center; justify-content:center; color:#fff; flex:none; }
+  .hero-chip b{ font-family:'Poppins',sans-serif; font-size:15px; color:var(--ink); display:block; }
+  .hero-chip span{ font-size:12.5px; color:var(--muted); }
+
+  /* Trust strip */
+  .trust{ margin-top:30px; }
+  .trust-inner{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:20px; overflow:hidden;
+  }
+  @media(min-width:760px){ .trust-inner{ grid-template-columns:repeat(4,1fr); } }
+  .trust-item{ background:var(--white); padding:22px 20px; display:flex; gap:13px; align-items:center; }
+  .trust-item .ic{ width:40px; height:40px; border-radius:12px; background:var(--sand-2);
+    color:var(--sage-dk); display:flex; align-items:center; justify-content:center; flex:none; }
+  .trust-item b{ font-family:'Poppins',sans-serif; font-size:15px; display:block; color:var(--ink); }
+  .trust-item span{ font-size:13px; color:var(--muted); }
 
   /* Sections */
-  section{ padding:78px 0; }
-  .head{ max-width:660px; margin:0 auto 46px; text-align:center; }
-  .eyebrow{ font-family:'Work Sans',sans-serif; font-weight:600; font-size:13.5px; letter-spacing:0.06em;
-    text-transform:uppercase; color:var(--orange); margin-bottom:10px; }
-  .head h2{ font-size:clamp(27px,3.6vw,40px); font-weight:700; }
+  section{ padding:76px 0; }
+  .head{ max-width:640px; margin-bottom:44px; }
+  .eyebrow{ font-family:'Poppins',sans-serif; font-weight:600; font-size:14px; color:var(--terra);
+    margin-bottom:10px; }
+  .head h2{ font-size:clamp(28px,3.8vw,42px); font-weight:700; }
   .head p{ margin-top:12px; color:var(--muted); font-size:17px; }
 
   /* Services */
-  .cards{ display:grid; grid-template-columns:1fr; gap:22px; }
-  @media(min-width:560px){ .cards{ grid-template-columns:repeat(2,1fr); } }
-  @media(min-width:960px){ .cards{ grid-template-columns:repeat(4,1fr); } }
-  .card{ background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:28px 24px;
-    box-shadow:var(--shadow-sm); transition:transform .18s ease, box-shadow .18s ease; }
+  .cards{ display:grid; grid-template-columns:1fr; gap:24px; }
+  @media(min-width:760px){ .cards{ grid-template-columns:repeat(3,1fr); } }
+  .card{ background:var(--white); border-radius:22px; padding:32px 28px; box-shadow:var(--shadow-sm);
+    border:1px solid var(--line); transition:transform .18s ease, box-shadow .18s ease; }
   .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
-  .card .ic{ width:54px; height:54px; border-radius:12px; background:#EAF1F5; color:var(--blue);
-    display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
-  .card .ic svg{ width:28px; height:28px; }
-  .card h3{ font-size:19px; font-weight:600; margin-bottom:7px; }
-  .card p{ color:var(--muted); font-size:14.5px; }
+  .card .ic{ width:58px; height:58px; border-radius:16px; background:var(--sand-2);
+    color:var(--sage-dk); display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
+  .card .ic svg{ width:30px; height:30px; }
+  .card h3{ font-size:21px; font-weight:600; margin-bottom:8px; }
+  .card p{ color:var(--muted); font-size:15.5px; }
+  .card .link{ margin-top:16px; display:inline-flex; align-items:center; gap:7px;
+    color:var(--terra); font-family:'Poppins',sans-serif; font-weight:600; font-size:14.5px; }
 
-  /* Why us strip */
-  .why{ background:var(--blue); color:#fff; }
-  .why-grid{ display:grid; grid-template-columns:1fr; gap:1px; background:rgba(255,255,255,0.16);
-    border-radius:16px; overflow:hidden; }
-  @media(min-width:680px){ .why-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media(min-width:980px){ .why-grid{ grid-template-columns:repeat(4,1fr); } }
-  .why-item{ background:var(--blue); padding:30px 26px; }
-  .why-item .ic{ width:46px; height:46px; border-radius:12px; background:rgba(255,255,255,0.14);
-    color:#FFB77E; display:flex; align-items:center; justify-content:center; margin-bottom:15px; }
-  .why-item .ic svg{ width:24px; height:24px; }
-  .why-item h3{ font-size:18px; font-weight:600; color:#fff; margin-bottom:6px; }
-  .why-item p{ font-size:14.5px; color:rgba(255,255,255,0.82); }
+  /* Portfolio */
+  .portfolio{ background:var(--sand-2); }
+  .gallery{ display:grid; grid-template-columns:1fr; gap:20px; }
+  @media(min-width:600px){ .gallery{ grid-template-columns:repeat(2,1fr); } }
+  @media(min-width:920px){ .gallery{ grid-template-columns:repeat(3,1fr); } }
+  .shot{ position:relative; border-radius:20px; overflow:hidden; box-shadow:var(--shadow-sm);
+    background:var(--white); }
+  .shot img{ width:100%; height:230px; object-fit:cover; transition:transform .4s ease; }
+  .shot:hover img{ transform:scale(1.05); }
+  .shot .cap{ position:absolute; left:0; right:0; bottom:0; padding:30px 18px 16px;
+    color:#fff; background:linear-gradient(to top, rgba(31,30,26,0.82), rgba(31,30,26,0)); }
+  .shot .cap b{ font-family:'Poppins',sans-serif; font-weight:600; font-size:16px; display:block; }
+  .shot .cap span{ font-size:13px; opacity:0.9; }
+  .shot .flag{ position:absolute; top:12px; left:12px; background:var(--terra); color:#fff;
+    font-family:'Poppins',sans-serif; font-weight:600; font-size:11.5px; padding:5px 11px; border-radius:999px; }
 
-  /* Comfort split band */
-  .split{ display:grid; grid-template-columns:1fr; gap:40px; align-items:center; }
-  @media(min-width:860px){ .split{ grid-template-columns:1fr 1fr; gap:56px; } }
-  .split-media{ position:relative; }
-  .split-media img{ width:100%; height:clamp(280px,36vw,420px); object-fit:cover;
-    border-radius:16px; box-shadow:var(--shadow); }
-  .split h2{ font-size:clamp(26px,3.4vw,38px); font-weight:700; }
-  .split p{ margin-top:14px; color:var(--muted); font-size:16.5px; }
-  .split ul{ list-style:none; margin-top:20px; display:grid; gap:12px; }
-  .split li{ display:flex; gap:12px; align-items:flex-start; font-size:15.5px; }
-  .split li svg{ width:22px; height:22px; color:var(--blue); flex:none; margin-top:1px; }
-  .split .cta{ margin-top:26px; }
-
-  /* Reviews */
-  .reviews{ background:#EEF3F5; }
-  .quotes{ display:grid; grid-template-columns:1fr; gap:22px; }
+  /* Testimonials */
+  .quotes{ display:grid; grid-template-columns:1fr; gap:24px; }
   @media(min-width:760px){ .quotes{ grid-template-columns:repeat(3,1fr); } }
-  .quote{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:28px 26px; box-shadow:var(--shadow-sm); }
-  .stars{ color:var(--orange); font-size:15px; letter-spacing:2px; margin-bottom:13px; }
-  .quote p{ font-size:16px; color:var(--ink); }
+  .quote{ background:var(--white); border-radius:22px; padding:30px 28px; box-shadow:var(--shadow-sm);
+    border:1px solid var(--line); }
+  .stars{ color:var(--terra); font-size:16px; letter-spacing:2px; margin-bottom:14px; }
+  .quote p{ font-size:16.5px; color:var(--ink); }
   .quote .who{ margin-top:18px; display:flex; align-items:center; gap:12px; }
-  .quote .av{ width:40px; height:40px; border-radius:50%; background:var(--blue); color:#fff;
-    display:flex; align-items:center; justify-content:center; font-family:'Work Sans',sans-serif; font-weight:600; font-size:15px; }
-  .quote .who b{ font-family:'Work Sans',sans-serif; font-size:14.5px; }
-  .quote .who span{ display:block; font-size:12.5px; color:var(--muted); }
+  .quote .who .av{ width:42px; height:42px; border-radius:50%; background:var(--sage); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:600; }
+  .quote .who b{ font-family:'Poppins',sans-serif; font-size:15px; }
+  .quote .who span{ font-size:13px; color:var(--muted); display:block; }
 
   /* Service area */
-  .areas{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
-  @media(min-width:640px){ .areas{ grid-template-columns:repeat(4,1fr); } }
-  .area{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 18px;
-    display:flex; align-items:center; gap:10px; font-family:'Work Sans',sans-serif; font-weight:600;
-    font-size:15.5px; box-shadow:var(--shadow-sm); }
-  .area svg{ width:17px; height:17px; color:var(--orange); flex:none; }
-
-  /* FAQ */
-  .faq-list{ max-width:800px; margin:0 auto; display:grid; gap:14px; }
-  details{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:4px 22px; box-shadow:var(--shadow-sm); }
-  details summary{ list-style:none; cursor:pointer; padding:18px 0; font-family:'Work Sans',sans-serif;
-    font-weight:600; font-size:17px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
-  details summary::-webkit-details-marker{ display:none; }
-  details summary .pm{ width:24px; height:24px; flex:none; position:relative; }
-  details summary .pm::before, details summary .pm::after{ content:""; position:absolute; background:var(--blue);
-    border-radius:2px; transition:transform .2s ease; }
-  details summary .pm::before{ top:11px; left:3px; width:18px; height:2px; }
-  details summary .pm::after{ top:3px; left:11px; width:2px; height:18px; }
-  details[open] summary .pm::after{ transform:rotate(90deg); opacity:0; }
-  details .a{ padding:0 0 20px; color:var(--muted); font-size:15.5px; }
+  .area{ background:var(--sage); color:#fff; border-radius:28px; padding:52px 40px;
+    display:grid; grid-template-columns:1fr; gap:32px; align-items:center; }
+  @media(min-width:820px){ .area{ grid-template-columns:1fr 1fr; padding:60px 56px; } }
+  .area h2{ font-size:clamp(26px,3.4vw,38px); font-weight:700; color:#fff; }
+  .area p{ margin-top:12px; color:rgba(255,255,255,0.9); max-width:42ch; }
+  .area-list{ display:flex; flex-wrap:wrap; gap:12px; }
+  .area-list .pill{ background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.32);
+    border-radius:999px; padding:11px 20px; font-family:'Poppins',sans-serif; font-weight:600; font-size:16px;
+    display:flex; align-items:center; gap:9px; }
+  .area-list .pill svg{ width:16px; height:16px; }
 
   /* Final CTA */
-  .cta-band{ background:var(--blue-deep); color:#fff; text-align:center; }
-  .cta-band h2{ font-size:clamp(27px,3.6vw,40px); font-weight:700; color:#fff; max-width:20ch; margin:0 auto; }
-  .cta-band p{ color:rgba(255,255,255,0.85); margin:14px auto 26px; max-width:48ch; font-size:17px; }
-  .cta-band .row{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; align-items:center; }
-  .cta-band .phone{ font-family:'Work Sans',sans-serif; font-weight:700; font-size:22px; color:#fff; }
+  .cta-band{ text-align:center; }
+  .cta-inner{ background:var(--white); border:1px solid var(--line); border-radius:28px;
+    padding:56px 32px; box-shadow:var(--shadow); }
+  .cta-inner h2{ font-size:clamp(26px,3.6vw,40px); font-weight:700; max-width:20ch; margin:0 auto; }
+  .cta-inner p{ color:var(--muted); margin:14px auto 26px; max-width:46ch; font-size:17px; }
 
   /* Footer */
-  footer{ background:var(--ink); color:#fff; padding:56px 0 26px; }
-  .foot-grid{ display:grid; grid-template-columns:1fr; gap:34px; padding-bottom:30px;
+  footer{ background:var(--ink); color:#fff; padding:56px 0 26px; margin-top:8px; }
+  .foot-grid{ display:grid; grid-template-columns:1fr; gap:34px; padding-bottom:32px;
     border-bottom:1px solid rgba(255,255,255,0.12); }
-  @media(min-width:760px){ .foot-grid{ grid-template-columns:1.6fr 1fr 1fr 1.1fr; } }
-  .foot-grid .brand{ color:#fff; } .foot-grid .brand span{ color:#8FB2C7; }
-  .foot-note{ color:#9AA7AF; font-size:14.5px; margin-top:14px; max-width:34ch; }
-  .socials{ display:flex; gap:11px; margin-top:16px; }
-  .socials a{ width:37px; height:37px; border-radius:9px; background:rgba(255,255,255,0.08);
-    display:flex; align-items:center; justify-content:center; transition:background .15s ease; }
-  .socials a:hover{ background:var(--orange); }
-  footer h4{ font-family:'Work Sans',sans-serif; font-size:15px; margin-bottom:13px; }
-  footer ul{ list-style:none; } footer li{ color:#9AA7AF; font-size:14.5px; margin-bottom:8px; }
+  @media(min-width:760px){ .foot-grid{ grid-template-columns:1.6fr 1fr 1fr 1fr; } }
+  .foot-grid .brand{ color:#fff; }
+  .foot-grid .brand span{ color:var(--sage); }
+  .foot-note{ color:#B7B3A8; font-size:14.5px; margin-top:14px; max-width:34ch; }
+  .socials{ display:flex; gap:12px; margin-top:18px; }
+  .socials a{ width:38px; height:38px; border-radius:11px; background:rgba(255,255,255,0.08);
+    display:flex; align-items:center; justify-content:center; color:#fff; transition:background .15s ease; }
+  .socials a:hover{ background:var(--terra); }
+  footer h4{ font-family:'Poppins',sans-serif; font-size:15px; margin-bottom:14px; color:#fff; }
+  footer ul{ list-style:none; }
+  footer li{ color:#B7B3A8; font-size:14.5px; margin-bottom:8px; }
   footer a:hover{ color:#fff; }
-  .foot-bottom{ padding-top:22px; font-size:13px; color:#7C8A92; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+  .foot-bottom{ padding-top:22px; font-size:13px; color:#8C887E; display:flex;
+    justify-content:space-between; flex-wrap:wrap; gap:8px; }
 
-  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  /* Reveal */
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
   .reveal.in{ opacity:1; transform:none; }
-  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} .reveal{opacity:1; transform:none;} }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    .reveal{ opacity:1; transform:none; }
+  }
 </style>
 </head>
 <body id="top">
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Desert Air Comfort home">
-      <svg viewBox="0 0 48 48" role="img" aria-label="Desert Air Comfort logo">
-        <rect width="48" height="48" rx="10" fill="#3E6B8A"/>
-        <g stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M24 12v24M12 24h24M15.5 15.5l17 17M32.5 15.5l-17 17"/></g>
-        <circle cx="24" cy="24" r="4" fill="#E8792C"/>
+    <a class="logo" href="#top" aria-label="Sonoran Yard Co. home">
+      <svg viewBox="0 0 48 48" role="img" aria-label="Sonoran Yard Co. logo">
+        <rect width="48" height="48" rx="12" fill="#7A8B6F"/>
+        <circle cx="24" cy="19" r="7" fill="#C1663A"/>
+        <path d="M12 34c4-6 8-6 12-6s8 0 12 6" stroke="#F2ECE1" stroke-width="3" fill="none" stroke-linecap="round"/>
       </svg>
-      <span class="brand">Desert Air <span>Comfort</span><small>Residential Heating &amp; Cooling</small></span>
+      <span class="brand">Sonoran <span>Yard Co.</span></span>
     </a>
     <nav class="nav-links">
       <a href="#top">Home</a>
       <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#areas">Service Area</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-right">
-      <span class="nav-phone"><small>Call for same-day service</small><b>(480) 555-0132</b></span>
-      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Schedule Service</button>
+      <span class="nav-phone">(602) 555-0142</span>
+      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Quote</button>
     </div>
   </div>
 </header>
@@ -220,21 +236,46 @@
 <main>
 <!-- Hero -->
 <section class="hero">
-  <div class="bg"></div>
-  <div class="scrim"></div>
   <div class="wrap">
-    <div class="hero-inner">
-      <span class="heat-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg> Beat the Arizona heat</span>
-      <h1>When it hits 115°, your AC can&rsquo;t wait. <span>We show up — same day.</span></h1>
-      <p>Desert Air Comfort keeps Phoenix-metro homes cool with fast, honest AC repair, installation, and maintenance. Upfront pricing, licensed techs, no surprises.</p>
-      <div class="hero-cta">
-        <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Schedule Service</button>
-        <a href="#services" class="btn btn-ghost">See Our Services</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span> Landscape · Hardscape · Irrigation</span>
+        <h1>Turn your Arizona yard into the <em>place you never want to leave.</em></h1>
+        <p class="hero-lead">Sonoran Yard Co. designs, builds, and maintains low-water desert landscapes, paver patios, and smart irrigation across the West Valley — from bare dirt to backyard oasis.</p>
+        <div class="hero-cta">
+          <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Quote</button>
+          <a href="#portfolio" class="btn btn-sage">See the Transformations</a>
+        </div>
+        <p class="hero-cta note" style="margin-top:14px;">Free on-site estimates · Family-owned · Licensed &amp; bonded</p>
       </div>
-      <div class="badges">
-        <div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg> Licensed, Bonded &amp; Insured</div>
-        <div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg> 15+ Years in the Valley</div>
-        <div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Upfront, Flat-Rate Pricing</div>
+      <div class="hero-media reveal">
+        <img src="assets/hero-backyard.jpg" alt="Transformed Arizona backyard with covered patio, pool, and desert landscaping at golden hour">
+        <div class="hero-chip">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg></div>
+          <div><b>500+ yards transformed</b><span>Across the West Valley</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust strip -->
+    <div class="trust reveal">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div><b>Licensed &amp; Bonded</b><span>AZ ROC #000000</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><circle cx="16.5" cy="9.5" r="2.6"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M14.5 19c0-2.2 1.4-3.8 3.5-3.8s3 1.4 3 3.4"/></svg></div>
+          <div><b>Family-Owned</b><span>Local crews, real names</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><b>West Valley Local</b><span>Goodyear-based</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <div><b>12+ Years</b><span>Serving the metro</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -245,160 +286,93 @@
   <div class="wrap">
     <div class="head reveal">
       <div class="eyebrow">What We Do</div>
-      <h2>Complete residential AC service</h2>
-      <p>Repair, replace, or maintain — one trusted local team for everything that keeps your home comfortable.</p>
+      <h2>Everything your yard needs, one local crew.</h2>
+      <p>From weekly upkeep to a full backyard rebuild, we handle the whole project — design, install, and the water systems that keep it alive.</p>
     </div>
     <div class="cards reveal">
       <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 2 2 6-6a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3z"/></svg></div>
-        <h3>AC Repair</h3>
-        <p>Not cooling? We diagnose fast and fix it right — most repairs done same day, parts on the truck.</p>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c3 3 4 6 4 9a4 4 0 0 1-8 0c0-3 1-6 4-9z"/><path d="M12 12v9"/></svg></div>
+        <h3>Landscape Maintenance</h3>
+        <p>Weekly and monthly care that keeps your yard sharp all year — trimming, cleanups, seasonal color, and plant health checks.</p>
+        <span class="link" onclick="document.dispatchEvent(new Event('open-demo-chat'))" role="button" tabindex="0">Ask about a plan →</span>
       </div>
       <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/></svg></div>
-        <h3>AC Installation</h3>
-        <p>Right-sized, high-efficiency systems installed clean and quoted flat — with financing options available.</p>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 20h18"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/><rect x="9" y="8" width="6" height="6"/></svg></div>
+        <h3>Hardscape Design</h3>
+        <p>Paver patios, walkways, fire pits, and retaining walls — designed for Arizona sun and built to last for decades.</p>
+        <span class="link" onclick="document.dispatchEvent(new Event('open-demo-chat'))" role="button" tabindex="0">Start a design →</span>
       </div>
       <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v4M12 18v4M4 12H2M22 12h-2M5 5l2.5 2.5M16.5 16.5L19 19M19 5l-2.5 2.5M7.5 16.5L5 19"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <h3>Maintenance &amp; Tune-Ups</h3>
-        <p>Seasonal tune-ups that catch small problems early — so your system survives the summer at full strength.</p>
-      </div>
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2L4.5 13H12l-1 9 8.5-11H12l1-9z"/></svg></div>
-        <h3>Emergency &amp; Weekend Service</h3>
-        <p>AC out on a Saturday? We answer nights and weekends — because a Phoenix summer doesn&rsquo;t take days off.</p>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3s5 5.5 5 10a5 5 0 0 1-10 0c0-4.5 5-10 5-10z"/><path d="M4 20h16"/></svg></div>
+        <h3>Irrigation Solutions</h3>
+        <p>Water-smart drip and sprinkler systems — new installs and repairs, tuned to keep desert plants thriving and bills low.</p>
+        <span class="link" onclick="document.dispatchEvent(new Event('open-demo-chat'))" role="button" tabindex="0">Fix my system →</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Why us -->
-<section class="why">
-  <div class="wrap">
-    <div class="head reveal" style="color:#fff;">
-      <div class="eyebrow" style="color:#FFB77E;">Why Homeowners Choose Us</div>
-      <h2 style="color:#fff;">The AC company that actually shows up</h2>
-    </div>
-    <div class="why-grid reveal">
-      <div class="why-item">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>Fast Response</h3>
-        <p>Same-day appointments across the Valley, with real arrival windows we actually keep.</p>
-      </div>
-      <div class="why-item">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <h3>Upfront Pricing</h3>
-        <p>Flat-rate quotes before we start. You approve the price — no hourly surprises.</p>
-      </div>
-      <div class="why-item">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><circle cx="16.5" cy="9.5" r="2.6"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M14.5 19c0-2.2 1.4-3.8 3.5-3.8s3 1.4 3 3.4"/></svg></div>
-        <h3>Family-Owned</h3>
-        <p>Local owners, local crews. You get the same trusted techs every visit.</p>
-      </div>
-      <div class="why-item">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>Licensed Techs</h3>
-        <p>Background-checked, NATE-trained technicians — licensed, bonded, and insured.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Comfort split (about) -->
-<section id="about">
-  <div class="wrap">
-    <div class="split">
-      <div class="split-media reveal">
-        <img src="assets/thermostat.jpg" alt="Smart home thermostat set to a comfortable temperature">
-      </div>
-      <div class="reveal">
-        <div class="eyebrow">About Desert Air Comfort</div>
-        <h2>Comfort you can count on, summer after summer.</h2>
-        <p>We started Desert Air Comfort with one goal: be the AC company Phoenix homeowners can actually rely on. Fifteen years later, that still means honest advice, clean work, and a real person who picks up the phone.</p>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Straight answers — we fix what&rsquo;s broken, not what isn&rsquo;t.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Every job backed by a workmanship guarantee.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Energy-smart upgrades that lower your summer bills.</li>
-        </ul>
-        <div class="cta"><button class="btn btn-blue" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Talk to a Technician</button></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Reviews -->
-<section class="reviews">
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow">Reviews</div>
-      <h2>Trusted by Valley homeowners</h2>
+      <div class="eyebrow">Recent Transformations</div>
+      <h2>Dirt lots and tired yards, made beautiful.</h2>
+      <p>A few West Valley projects we&rsquo;re proud of — real backyards, real desert-tough builds.</p>
+    </div>
+    <div class="gallery reveal">
+      <div class="shot"><span class="flag">Hardscape</span><img src="assets/project-outdoor-kitchen.jpg" alt="Outdoor kitchen and shaded ramada with paver patio"><div class="cap"><b>Outdoor Kitchen &amp; Ramada</b><span>Goodyear, AZ</span></div></div>
+      <div class="shot"><span class="flag">Water Feature</span><img src="assets/project-pool-waterfall.jpg" alt="Pool deck with natural rock waterfall and desert planting"><div class="cap"><b>Pool Deck &amp; Rock Waterfall</b><span>Avondale, AZ</span></div></div>
+      <div class="shot"><span class="flag">Xeriscape</span><img src="assets/project-xeriscape.jpg" alt="Desert xeriscape garden with agave and aloe along a block wall"><div class="cap"><b>Desert Xeriscape Garden</b><span>Surprise, AZ</span></div></div>
+      <div class="shot"><span class="flag">Turf</span><img src="assets/project-turf.jpg" alt="Artificial turf lawn beside a pool deck"><div class="cap"><b>Artificial Turf &amp; Pool Deck</b><span>Phoenix, AZ</span></div></div>
+      <div class="shot"><span class="flag">Hardscape</span><img src="assets/project-firepit.jpg" alt="Fire pit patio with pavers and gravel border"><div class="cap"><b>Fire Pit Patio &amp; Pavers</b><span>Glendale, AZ</span></div></div>
+      <div class="shot"><span class="flag">Landscape</span><img src="assets/project-poolside.jpg" alt="Refreshed poolside landscape with new plantings"><div class="cap"><b>Poolside Landscape Refresh</b><span>Goodyear, AZ</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Neighbors Talk</div>
+      <h2>What West Valley homeowners say.</h2>
     </div>
     <div class="quotes reveal">
       <div class="quote">
         <div class="stars">★★★★★</div>
-        <p>&ldquo;AC died at 4pm in July and they had a tech out before dinner. Fixed it that night and the price was exactly what they quoted.&rdquo;</p>
-        <div class="who"><div class="av">R</div><div><b>Rachel M.</b><span>Chandler, AZ</span></div></div>
+        <p>&ldquo;They turned our dust-bowl backyard into the spot we spend every evening. The paver patio is flawless.&rdquo;</p>
+        <div class="who"><div class="av">M</div><div><b>Marisol</b><span>Goodyear, AZ</span></div></div>
       </div>
       <div class="quote">
         <div class="stars">★★★★★</div>
-        <p>&ldquo;Got three bids on a new system. Desert Air was the only one who measured everything and didn&rsquo;t try to oversell me.&rdquo;</p>
-        <div class="who"><div class="av">D</div><div><b>Derek P.</b><span>Gilbert, AZ</span></div></div>
+        <p>&ldquo;Our water bill dropped after they redid the irrigation and switched us to desert plants. Wish we&rsquo;d called sooner.&rdquo;</p>
+        <div class="who"><div class="av">T</div><div><b>Trevor</b><span>Surprise, AZ</span></div></div>
       </div>
       <div class="quote">
         <div class="stars">★★★★★</div>
-        <p>&ldquo;Same tech every visit, always on time, always clean. Our tune-up plan has paid for itself twice over.&rdquo;</p>
-        <div class="who"><div class="av">S</div><div><b>Sandra L.</b><span>Surprise, AZ</span></div></div>
+        <p>&ldquo;Crew showed up when they said, cleaned up every day, and the xeriscape still looks incredible a year later.&rdquo;</p>
+        <div class="who"><div class="av">D</div><div><b>Dana</b><span>Avondale, AZ</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Service area -->
-<section id="areas">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="eyebrow">Where We Work</div>
-      <h2>Serving the greater Phoenix metro</h2>
-      <p>Fast, local service across the East and West Valley.</p>
-    </div>
-    <div class="areas reveal">
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chandler</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Gilbert</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Mesa</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tempe</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Queen Creek</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Surprise</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Goodyear</div>
-      <div class="area"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Peoria</div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
 <section>
   <div class="wrap">
-    <div class="head reveal">
-      <div class="eyebrow">Good to Know</div>
-      <h2>Common questions</h2>
-    </div>
-    <div class="faq-list reveal">
-      <details open>
-        <summary>How often should I service my AC in Arizona?<span class="pm"></span></summary>
-        <div class="a">At least once a year — ideally in early spring, before the first heat wave. Arizona&rsquo;s dust and extreme run-times wear systems faster than most climates, so an annual tune-up is the single best way to avoid a mid-summer breakdown.</div>
-      </details>
-      <details>
-        <summary>My AC is still cooling — do I really need a tune-up?<span class="pm"></span></summary>
-        <div class="a">Yes. A system can still run while quietly losing efficiency or heading toward a failure. A tune-up catches low refrigerant, worn capacitors, and dirty coils early — while they&rsquo;re a cheap fix instead of an emergency.</div>
-      </details>
-      <details>
-        <summary>How long does a new AC installation take?<span class="pm"></span></summary>
-        <div class="a">Most residential changeouts are done in a single day. We&rsquo;ll give you a firm timeline and a flat quote before we start, and we always clean up before we leave.</div>
-      </details>
-      <details>
-        <summary>Do you offer emergency service on weekends?<span class="pm"></span></summary>
-        <div class="a">We do. We answer calls nights and weekends and prioritize no-cool emergencies — because in a Phoenix summer, a broken AC isn&rsquo;t something that can wait until Monday.</div>
-      </details>
+    <div class="area reveal">
+      <div>
+        <h2>Proudly serving the West Valley &amp; beyond.</h2>
+        <p>Based in Goodyear and working across the metro. If your yard&rsquo;s nearby, we&rsquo;d love to take a look.</p>
+      </div>
+      <div class="area-list">
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Goodyear</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Avondale</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Surprise</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Phoenix</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Glendale</span>
+      </div>
     </div>
   </div>
 </section>
@@ -406,11 +380,10 @@
 <!-- Final CTA -->
 <section id="contact" class="cta-band">
   <div class="wrap">
-    <h2>Too hot to wait? Let&rsquo;s get your home cool.</h2>
-    <p>Schedule online or call now — same-day appointments available across the Valley.</p>
-    <div class="row">
-      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Schedule Service</button>
-      <span class="phone">(480) 555-0132</span>
+    <div class="cta-inner reveal">
+      <h2>Ready to fall back in love with your yard?</h2>
+      <p>Tell us what you&rsquo;re picturing and we&rsquo;ll put together a free, no-pressure quote. Most estimates within 48 hours.</p>
+      <button class="btn" onclick="document.dispatchEvent(new Event('open-demo-chat'))">Get a Free Quote</button>
     </div>
   </div>
 </section>
@@ -420,57 +393,59 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="logo" style="gap:11px;">
-          <svg viewBox="0 0 48 48" width="40" height="40" role="img" aria-label="Desert Air Comfort logo">
-            <rect width="48" height="48" rx="10" fill="#3E6B8A"/>
-            <g stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M24 12v24M12 24h24M15.5 15.5l17 17M32.5 15.5l-17 17"/></g>
-            <circle cx="24" cy="24" r="4" fill="#E8792C"/>
+        <div class="logo" style="gap:12px;">
+          <svg viewBox="0 0 48 48" width="42" height="42" role="img" aria-label="Sonoran Yard Co. logo">
+            <rect width="48" height="48" rx="12" fill="#7A8B6F"/>
+            <circle cx="24" cy="19" r="7" fill="#C1663A"/>
+            <path d="M12 34c4-6 8-6 12-6s8 0 12 6" stroke="#F2ECE1" stroke-width="3" fill="none" stroke-linecap="round"/>
           </svg>
-          <span class="brand" style="color:#fff;">Desert Air <span style="color:#8FB2C7;">Comfort</span></span>
+          <span class="brand" style="color:#fff;">Sonoran <span style="color:var(--sage);">Yard Co.</span></span>
         </div>
-        <p class="foot-note">Fast, honest residential heating &amp; cooling for the greater Phoenix metro.</p>
+        <p class="foot-note">Low-water desert landscapes, hardscape, and smart irrigation for West Valley homeowners.</p>
         <div class="socials">
-          <a href="#" aria-label="Facebook (placeholder)"><svg viewBox="0 0 24 24" fill="#fff" width="17" height="17"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.3-2 2-2h2V2.2C18.4 2.1 17.3 2 16 2c-3 0-5 1.8-5 5.2V10H7v4h4v8h2z"/></svg></a>
-          <a href="#" aria-label="Instagram (placeholder)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" width="17" height="17"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-          <a href="#" aria-label="Google Business (placeholder)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" width="17" height="17"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="9"/></svg></a>
+          <a href="#" aria-label="Facebook (placeholder)"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.3-2 2-2h2V2.2C18.4 2.1 17.3 2 16 2c-3 0-5 1.8-5 5.2V10H7v4h4v8h2z"/></svg></a>
+          <a href="#" aria-label="Instagram (placeholder)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Google Business (placeholder)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="9"/></svg></a>
         </div>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">AC Repair</a></li>
-          <li><a href="#services">AC Installation</a></li>
-          <li><a href="#services">Maintenance &amp; Tune-Ups</a></li>
-          <li><a href="#services">Emergency Service</a></li>
+          <li><a href="#services">Landscape Maintenance</a></li>
+          <li><a href="#services">Hardscape Design</a></li>
+          <li><a href="#services">Irrigation Solutions</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
         </ul>
       </div>
       <div>
         <h4>Service Area</h4>
         <ul>
-          <li>Chandler · Gilbert · Mesa</li>
-          <li>Tempe · Queen Creek</li>
-          <li>Surprise · Goodyear</li>
-          <li>Peoria</li>
+          <li>Goodyear</li>
+          <li>Avondale</li>
+          <li>Surprise</li>
+          <li>Phoenix</li>
+          <li>Glendale</li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4>Get in Touch</h4>
         <ul>
-          <li>(480) 555-0132</li>
-          <li>service@desertaircomfort.com</li>
-          <li>Mon–Sun, 7am–8pm</li>
-          <li>Emergency service available</li>
+          <li>(602) 555-0142</li>
+          <li>hello@sonoranyardco.com</li>
+          <li>Mon–Sat, 7am–5pm</li>
+          <li>Free on-site estimates</li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Desert Air Comfort · Licensed, Bonded &amp; Insured · AZ ROC ######</span>
+      <span>© 2026 Sonoran Yard Co. · Licensed &amp; Bonded · AZ ROC #000000</span>
       <span>This is a demo site.</span>
     </div>
   </div>
 </footer>
 
 <script>
+  // Scroll reveal
   (function(){
     var els = document.querySelectorAll('.reveal');
     if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
@@ -483,11 +458,11 @@
 
 <!--
   ============================================================
-  TIDIO WIDGET — Desert Air Comfort (residential HVAC demo)
+  TIDIO WIDGET — Sonoran Yard Co. (landscape / hardscape demo)
   Paste/replace the Tidio embed snippet for this demo's bot here,
   immediately before </body>. The floating chat button is injected
   by Tidio itself once the script loads — nothing else needs to change.
-  The "Schedule Service" buttons dispatch an 'open-demo-chat' event
+  The "Get a Free Quote" buttons dispatch an 'open-demo-chat' event
   (wired below) to open the widget on click.
   Swap this snippet per demo and pull it back out when done.
   ============================================================
